@@ -1,0 +1,2682 @@
+{
+  "generated_at": "2026-07-28T12:42:58.659589",
+  "vulnerabilities": [
+    {
+      "id": "CVE-2026-0232",
+      "vendor": "Palo Alto Networks",
+      "product": "cortex xdr agent",
+      "products": [
+        "cortex xdr agent",
+        "windows"
+      ],
+      "description": "A problem with a protection mechanism in the Palo Alto Networks Cortex XDR agent on Windows allows a local Windows administrator to disable the agent. This issue may be leveraged by malware to perform malicious activity without detection.",
+      "cvss_score": 4.4,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-13T08:16:20.900",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "cortex xdr agent, windows",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0232"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0233",
+      "vendor": "Palo Alto Networks",
+      "product": "autonomous digital experience manager",
+      "products": [
+        "autonomous digital experience manager",
+        "windows"
+      ],
+      "description": "A certificate validation vulnerability in Palo Alto Networks Autonomous Digital Experience Manager on Windows allows an unauthenticated attacker with adjacent network access to execute arbitrary code with NT AUTHORITY\\SYSTEM  privileges.",
+      "cvss_score": 8.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-13T08:16:22.150",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "autonomous digital experience manager, windows",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0233"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0300",
+      "vendor": "Palo Alto Networks",
+      "product": "pa-1410",
+      "products": [
+        "pa-1410",
+        "pa-1420",
+        "pa-3410",
+        "pa-3420",
+        "pa-3430",
+        "pa-3440",
+        "pa-410",
+        "pa-410r",
+        "pa-410r-5g",
+        "pa-415",
+        "pa-415-5g",
+        "pa-440",
+        "pa-445",
+        "pa-450",
+        "pa-450r",
+        "pa-450r-5g",
+        "pa-455",
+        "pa-455-5g",
+        "pa-455r-5g",
+        "pa-460",
+        "pa-501",
+        "pa-505",
+        "pa-510",
+        "pa-520",
+        "pa-540",
+        "pa-5410",
+        "pa-5420",
+        "pa-5430",
+        "pa-5440",
+        "pa-5445",
+        "pa-545-poe",
+        "pa-5450",
+        "pa-550",
+        "pa-5540",
+        "pa-555-poe",
+        "pa-5550",
+        "pa-5560",
+        "pa-5570",
+        "pa-5580",
+        "pa-560",
+        "pa-7500",
+        "pa-7500-dpc-a",
+        "pan-os",
+        "ruggedcom ape1808",
+        "ruggedcom ape1808 firmware",
+        "vm-100",
+        "vm-300",
+        "vm-50",
+        "vm-500",
+        "vm-700"
+      ],
+      "description": "A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. \n\nThe risk of this issue is greatly reduced if you secure access to the User-ID™ Authentication Portal per the  best practice guidelines https://knowledgebase.paloaltonetworks.com/KCSArticleDetail  by restricting access to only trusted internal IP addresses.\n\nPrisma Access, Cloud NGFW and Panorama appliances are not impacted by this vulnerability.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-05-06T19:16:35.730",
+      "patch_available": false,
+      "kev_status": true,
+      "versions": "pa-1410, pa-1420, pa-3410, pa-3420, pa-3430, pa-3440, pa-410, pa-410r, pa-410r-5g, pa-415, pa-415-5g, pa-440, pa-445, pa-450, pa-450r, pa-450r-5g, pa-455, pa-455-5g, pa-455r-5g, pa-460, pa-501, pa-505, pa-510, pa-520, pa-540, pa-5410, pa-5420, pa-5430, pa-5440, pa-5445, pa-545-poe, pa-5450, pa-550, pa-5540, pa-555-poe, pa-5550, pa-5560, pa-5570, pa-5580, pa-560, pa-7500, pa-7500-dpc-a, pan-os, ruggedcom ape1808, ruggedcom ape1808 firmware, vm-100, vm-300, vm-50, vm-500, vm-700",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0300",
+        "https://cert-portal.siemens.com/productcert/html/ssa-967325.html",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-0300"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0237",
+      "vendor": "Palo Alto Networks",
+      "product": "macos",
+      "products": [
+        "macos",
+        "prisma browser"
+      ],
+      "description": "An improper protection of alternate path vulnerability in Palo Alto Networks Prisma® Browser on macOS fails to properly restrict access to an internal automation bridge. This allows a locally authenticated non-admin user to leverage an exposed communication channel to send unauthorized commands to the browser, bypassing security controls.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-13T18:16:12.990",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "macos, prisma browser",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0237"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0263",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os"
+      ],
+      "description": "A buffer overflow vulnerability in the IKEv2 processing of Palo Alto Networks PAN-OS® software allows an unauthenticated network-based attacker to execute arbitrary code with elevated privileges on the firewall, or cause a denial of service (DoS) condition.\n\n\nPanorama, Cloud NGFW, and Prisma® Access are not impacted by these vulnerabilities.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-05-13T18:16:14.003",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0263"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0264",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os",
+        "ruggedcom ape1808",
+        "ruggedcom ape1808 firmware"
+      ],
+      "description": "A buffer overflow vulnerability in the DNS proxy and DNS Server features of Palo Alto Networks PAN-OS® Software allows an unauthenticated attacker with network access to cause a denial of service (DoS) condition (all PAN-OS platforms except Cloud NGFW and Prisma Access) or potentially execute arbitrary code by sending specially crafted network traffic (PA-Series hardware only).\n\n\n\n\nPanorama, Cloud NGFW, and Prisma® Access are not impacted by this vulnerability.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-05-13T18:16:14.283",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os, ruggedcom ape1808, ruggedcom ape1808 firmware",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0264",
+        "https://cert-portal.siemens.com/productcert/html/ssa-967325.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0265",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os",
+        "ruggedcom ape1808",
+        "ruggedcom ape1808 firmware"
+      ],
+      "description": "An authentication bypass vulnerability in Palo Alto Networks PAN-OS® software enables an unauthenticated attacker with network access to bypass authentication controls when Cloud Authentication Service (CAS) is enabled.\n\n\n\nThe risk is higher if CAS is enabled on the management interface and lower when any other login interfaces are used.\n\nThe risk of this issue is greatly reduced if you secure access to the management web interface by restricting access to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\nCloud NGFW and Prisma Access® are not impacted by this vulnerability.",
+      "cvss_score": 8.1,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-13T18:16:14.693",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os, ruggedcom ape1808, ruggedcom ape1808 firmware",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0265",
+        "https://cert-portal.siemens.com/productcert/html/ssa-967325.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0235",
+      "vendor": "Palo Alto Networks",
+      "product": "prisma browser",
+      "products": [
+        "prisma browser"
+      ],
+      "description": "A race condition vulnerability in Palo Alto Networks Prisma® Browser enables a locally authenticated non-admin user to bypass certain access and data control policies.",
+      "cvss_score": 4.7,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-05-13T19:16:56.960",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "prisma browser",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0235"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0236",
+      "vendor": "Palo Alto Networks",
+      "product": "macos",
+      "products": [
+        "macos",
+        "prisma browser"
+      ],
+      "description": "A code injection vulnerability in Palo Alto Networks Prisma® Browser on macOS fails to properly restrict access to its AppleScript interface allowing a locally authenticated non-admin user to leverage this exposed Apple Event handler to send unauthorized commands to the browser.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-13T19:16:57.183",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "macos, prisma browser",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0236"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0238",
+      "vendor": "Palo Alto Networks",
+      "product": "broker vm",
+      "products": [
+        "broker vm"
+      ],
+      "description": "A vulnerability in Palo Alto Networks Broker VM allows an authenticated administrator to inject arbitrary content into certain Broker VM fields.",
+      "cvss_score": 3.2,
+      "severity": "LOW",
+      "unscored": false,
+      "published_date": "2026-05-13T19:16:57.417",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "broker vm",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0238"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0244",
+      "vendor": "Palo Alto Networks",
+      "product": "ion 1200",
+      "products": [
+        "ion 1200",
+        "ion 1200-c-na",
+        "ion 1200-c-row",
+        "ion 1200-c5g-ww",
+        "ion 1200-s",
+        "ion 1200-s-c-na",
+        "ion 1200-s-c-row",
+        "ion 1200-s-c5g-ww",
+        "ion 3102v",
+        "ion 3104v",
+        "ion 3108v",
+        "ion 3200",
+        "ion 3200h",
+        "ion 3200h-c5g-ww",
+        "ion 5200",
+        "ion 7108v",
+        "ion 7116v",
+        "ion 9200",
+        "pa-5440",
+        "prisma sd-wan"
+      ],
+      "description": "An improper certificate validation vulnerability in the Palo Alto Networks Prisma SD-WAN ION enables man-in-the-middle (MitM) attacker to impersonate the controller.",
+      "cvss_score": 8.1,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-13T19:16:58.297",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "ion 1200, ion 1200-c-na, ion 1200-c-row, ion 1200-c5g-ww, ion 1200-s, ion 1200-s-c-na, ion 1200-s-c-row, ion 1200-s-c5g-ww, ion 3102v, ion 3104v, ion 3108v, ion 3200, ion 3200h, ion 3200h-c5g-ww, ion 5200, ion 7108v, ion 7116v, ion 9200, pa-5440, prisma sd-wan",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0244"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0246",
+      "vendor": "Palo Alto Networks",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel",
+        "macos",
+        "prisma access agent",
+        "windows"
+      ],
+      "description": "A vulnerability with a privilege management mechanism in the Palo Alto Networks Prisma Access Agent® enables a locally authenticated non-administrative user to escalate their privileges to root on macOS and Linux or NT AUTHORITY\\SYSTEM on Windows. This allows the user to execute arbitrary code and read sensitive information otherwise accessible only to privileged accounts.\n\n\n\nThe Prisma Access Agent on iOS, Android and Chrome OS are not affected.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-13T19:16:58.603",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "linux kernel, macos, prisma access agent, windows",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0246"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0249",
+      "vendor": "Palo Alto Networks",
+      "product": "globalprotect",
+      "products": [
+        "globalprotect"
+      ],
+      "description": "Multiple improper certificate validation vulnerabilities in the Palo Alto Networks GlobalProtect™ app enables an attacker to intercept encrypted communications and potentially compromise the endpoint. This can enable a local non-administrative operating system user or an attacker on the same subnet to redirect traffic to an unauthorized server and facilitate the installation of malicious software.\n\nThe GlobalProtect app on Linux, Windows, iOS and GlobalProtect UWP app are not affected.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-05-13T19:16:59.073",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "globalprotect",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0249"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0250",
+      "vendor": "Palo Alto Networks",
+      "product": "globalprotect",
+      "products": [
+        "globalprotect"
+      ],
+      "description": "A buffer overflow vulnerability exists in the Palo Alto Networks GlobalProtect™ app that enables a man in the middle attacker to disrupt system processes and potentially execute arbitrary code with SYSTEM privileges. This vulnerability is triggered during the processing of requests and responses exchanged between Portal and Gateway.\n\n\n\nThe GlobalProtect app on iOS is not affected.",
+      "cvss_score": 8.1,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-13T19:16:59.260",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "globalprotect",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0250"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-0251",
+      "vendor": "Palo Alto Networks",
+      "product": "globalprotect",
+      "products": [
+        "globalprotect"
+      ],
+      "description": "Multiple local privilege escalation vulnerabilities in the Palo Alto Networks GlobalProtect™ app allow a local user to escalate their privileges to NT AUTHORITY\\SYSTEM on Windows and root on macOS and Linux. This enables a non-administrative user to execute arbitrary commands with administrative privileges.\n\nThe GlobalProtect app on iOS, Android, Chrome OS and GlobalProtect UWP app are not affected.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-13T19:16:59.470",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "globalprotect",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0251"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-35616",
+      "vendor": "Fortinet",
+      "product": "forticlientems",
+      "products": [
+        "forticlientems"
+      ],
+      "description": "A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-04-04T01:16:39.720",
+      "patch_available": true,
+      "kev_status": true,
+      "versions": "forticlientems",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-099",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-35616"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2024-23104",
+      "vendor": "Fortinet",
+      "product": "fortindr",
+      "products": [
+        "fortindr",
+        "fortivoice"
+      ],
+      "description": "An exposure of sensitive information to an unauthorized actor vulnerability in Fortinet FortiNDR 7.6.0, FortiNDR 7.4.0 through 7.4.8, FortiNDR 7.2 all versions, FortiNDR 7.1 all versions, FortiNDR 7.0 all versions, FortiVoice 7.0.0 through 7.0.1 may allow a remote authenticated attacker with at least read-only permission on system maintenance to access backup information via crafted HTTP requests",
+      "cvss_score": 5.4,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:28.723",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortindr, fortivoice",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-124"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-53847",
+      "vendor": "Fortinet",
+      "product": "fortios",
+      "products": [
+        "fortios"
+      ],
+      "description": "A missing authentication for critical function vulnerability in Fortinet FortiOS 7.6.0 through 7.6.3, FortiOS 7.4.0 through 7.4.8, FortiOS 7.2.0 through 7.2.11, FortiOS 7.0.0 through 7.0.17, FortiOS 6.4 all versions, FortiOS 6.2.9 through 6.2.17 allows attacker to execute unauthorized code or commands via specially crafted packets.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:30.890",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortios",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-125",
+        "https://cert-portal.siemens.com/productcert/html/ssa-975644.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-59809",
+      "vendor": "Fortinet",
+      "product": "fortisoar",
+      "products": [
+        "fortisoar"
+      ],
+      "description": "A server-side request forgery (ssrf) vulnerability [CWE-918] vulnerability in Fortinet FortiSOAR PaaS 7.6.4, FortiSOAR PaaS 7.6.0 through 7.6.2, FortiSOAR PaaS 7.5.0 through 7.5.2, FortiSOAR PaaS 7.4 all versions, FortiSOAR PaaS 7.3 all versions, FortiSOAR on-premise 7.6.4, FortiSOAR on-premise 7.6.0 through 7.6.2, FortiSOAR on-premise 7.5.0 through 7.5.2, FortiSOAR on-premise 7.4 all versions, FortiSOAR on-premise 7.3 all versions may allow an authenticated attacker to discover services running on local ports via crafted requests.",
+      "cvss_score": 4.3,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:31.103",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortisoar",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-103"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-61624",
+      "vendor": "Fortinet",
+      "product": "fortios",
+      "products": [
+        "fortios",
+        "fortipam",
+        "fortiproxy",
+        "fortiswitchmanager"
+      ],
+      "description": "An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') [CWE-22] vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4, FortiOS 7.4.0 through 7.4.9, FortiOS 7.2 all versions, FortiOS 7.0 all versions, FortiOS 6.4 all versions, FortiPAM 1.7.0, FortiPAM 1.6 all versions, FortiPAM 1.5 all versions, FortiPAM 1.4 all versions, FortiPAM 1.3 all versions, FortiPAM 1.2 all versions, FortiPAM 1.1 all versions, FortiPAM 1.0 all versions, FortiProxy 7.6.0 through 7.6.4, FortiProxy 7.4.0 through 7.4.11, FortiProxy 7.2 all versions, FortiProxy 7.0 all versions, FortiSwitchManager 7.2.0 through 7.2.7, FortiSwitchManager 7.0.0 through 7.0.6 may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.",
+      "cvss_score": 6.0,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:31.300",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortios, fortipam, fortiproxy, fortiswitchmanager",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-122",
+        "https://cert-portal.siemens.com/productcert/html/ssa-975644.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-61848",
+      "vendor": "Fortinet",
+      "product": "fortianalyzer",
+      "products": [
+        "fortianalyzer",
+        "fortianalyzer cloud",
+        "fortimanager",
+        "fortimanager cloud"
+      ],
+      "description": "An improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.4, FortiAnalyzer 7.4.0 through 7.4.8, FortiAnalyzer 7.2 all versions, FortiAnalyzer 7.0 all versions, FortiAnalyzer Cloud 7.6.0 through 7.6.4, FortiAnalyzer Cloud 7.4.0 through 7.4.8, FortiAnalyzer Cloud 7.2 all versions, FortiAnalyzer Cloud 7.0 all versions, FortiManager 7.6.0 through 7.6.4, FortiManager 7.4.0 through 7.4.8, FortiManager 7.2 all versions, FortiManager 7.0 all versions, FortiManager Cloud 7.6.0 through 7.6.4, FortiManager Cloud 7.4.0 through 7.4.8, FortiManager Cloud 7.2 all versions, FortiManager Cloud 7.0 all versions may allow a privileged authenticated attacker to execute unauthorized code or commands via JSON RPC API",
+      "cvss_score": 7.2,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:31.610",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortianalyzer, fortianalyzer cloud, fortimanager, fortimanager cloud",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-111"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-61886",
+      "vendor": "Fortinet",
+      "product": "fortisandbox",
+      "products": [
+        "fortisandbox",
+        "fortisandbox cloud"
+      ],
+      "description": "An Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability [CWE-79] vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.4, FortiSandbox PaaS 5.0.0 through 5.0.4 may allow an attacker to perform an XSS attack via crafted HTTP requests.",
+      "cvss_score": 5.4,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:31.800",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortisandbox, fortisandbox cloud",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-109"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-68649",
+      "vendor": "Fortinet",
+      "product": "fortianalyzer",
+      "products": [
+        "fortianalyzer",
+        "fortianalyzer cloud",
+        "fortimanager",
+        "fortimanager cloud"
+      ],
+      "description": "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.4, FortiAnalyzer 7.4.0 through 7.4.7, FortiAnalyzer 7.2 all versions, FortiAnalyzer 7.0 all versions, FortiAnalyzer Cloud 7.6.0 through 7.6.4, FortiAnalyzer Cloud 7.4.0 through 7.4.7, FortiAnalyzer Cloud 7.2 all versions, FortiAnalyzer Cloud 7.0 all versions, FortiManager 7.6.0 through 7.6.4, FortiManager 7.4.0 through 7.4.7, FortiManager 7.2 all versions, FortiManager 7.0 all versions, FortiManager Cloud 7.6.0 through 7.6.4, FortiManager Cloud 7.4.0 through 7.4.7, FortiManager Cloud 7.2 all versions, FortiManager Cloud 7.0 all versions may allow a privileged attacker to delete files from the underlying filesystem via crafted CLI requests.",
+      "cvss_score": 6.0,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:34.760",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortianalyzer, fortianalyzer cloud, fortimanager, fortimanager cloud",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-120"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-21741",
+      "vendor": "Fortinet",
+      "product": "fortinac-f",
+      "products": [
+        "fortinac-f"
+      ],
+      "description": "An URL Redirection to Untrusted Site ('Open Redirect') vulnerability [CWE-601] vulnerability in Fortinet FortiNAC-F 7.6.0 through 7.6.5, FortiNAC-F 7.4 all versions, FortiNAC-F 7.2 all versions may allow a remote privileged attacker with system administrator role to redirect users to an arbitrary website via crafted CSV file.",
+      "cvss_score": 2.4,
+      "severity": "LOW",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:35.777",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortinac-f",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-118"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-21742",
+      "vendor": "Fortinet",
+      "product": "fortisoar",
+      "products": [
+        "fortisoar"
+      ],
+      "description": "A cleartext transmission of sensitive information vulnerability in Fortinet FortiSOAR PaaS 7.6.0 through 7.6.3, FortiSOAR PaaS 7.5.0 through 7.5.2, FortiSOAR PaaS 7.4 all versions, FortiSOAR PaaS 7.3 all versions, FortiSOAR on-premise 7.6.0 through 7.6.2, FortiSOAR on-premise 7.5.0 through 7.5.1, FortiSOAR on-premise 7.4 all versions, FortiSOAR on-premise 7.3 all versions may allow an authenticated attacker to view cleartext password in response for Secure Message Exchange and Radius queries, if configured",
+      "cvss_score": 5.7,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:35.930",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortisoar",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-106"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-22154",
+      "vendor": "Fortinet",
+      "product": "fortisoar",
+      "products": [
+        "fortisoar"
+      ],
+      "description": "An improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Fortinet FortiSOAR PaaS 7.6.0 through 7.6.3, FortiSOAR PaaS 7.5.0 through 7.5.2, FortiSOAR PaaS 7.4 all versions, FortiSOAR PaaS 7.3 all versions, FortiSOAR on-premise 7.6.0 through 7.6.3, FortiSOAR on-premise 7.5.0 through 7.5.2, FortiSOAR on-premise 7.4 all versions, FortiSOAR on-premise 7.3 all versions may allow an authenticated remote attacker to perform a stored cross site scripting (XSS) attack via crafted HTTP Requests.",
+      "cvss_score": 4.6,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:36.077",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortisoar",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-117"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-22155",
+      "vendor": "Fortinet",
+      "product": "fortisoar",
+      "products": [
+        "fortisoar"
+      ],
+      "description": "A cleartext transmission of sensitive information vulnerability in Fortinet FortiSOAR PaaS 7.6.0 through 7.6.3, FortiSOAR PaaS 7.5.0 through 7.5.2, FortiSOAR PaaS 7.4 all versions, FortiSOAR PaaS 7.3 all versions, FortiSOAR on-premise 7.6.0 through 7.6.2, FortiSOAR on-premise 7.5.0 through 7.5.1, FortiSOAR on-premise 7.4 all versions, FortiSOAR on-premise 7.3 all versions may allow attacker to information disclosure via <insert attack vector here>",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:36.267",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortisoar",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-106"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-22573",
+      "vendor": "Fortinet",
+      "product": "fortisoar",
+      "products": [
+        "fortisoar"
+      ],
+      "description": "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiSOAR PaaS 7.6.0 through 7.6.3, FortiSOAR PaaS 7.5 all versions, FortiSOAR PaaS 7.4 all versions, FortiSOAR PaaS 7.3 all versions, FortiSOAR on-premise 7.6.0 through 7.6.3, FortiSOAR on-premise 7.5 all versions, FortiSOAR on-premise 7.4 all versions, FortiSOAR on-premise 7.3 all versions may allow an authenticated remote attacker to perform path traversal attack via File Content Extraction actions.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:36.550",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortisoar",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-116"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-22574",
+      "vendor": "Fortinet",
+      "product": "fortisoar",
+      "products": [
+        "fortisoar"
+      ],
+      "description": "A storing passwords in a recoverable format vulnerability in Fortinet FortiSOAR PaaS 7.6.0 through 7.6.4, FortiSOAR PaaS 7.5.0 through 7.5.2, FortiSOAR PaaS 7.4 all versions, FortiSOAR PaaS 7.3 all versions, FortiSOAR on-premise 7.6.0 through 7.6.4, FortiSOAR on-premise 7.5.0 through 7.5.2, FortiSOAR on-premise 7.4 all versions, FortiSOAR on-premise 7.3 all versions may allow an authenticated remote attacker to retrieve Service account password via server address modification in LDAP configuration.",
+      "cvss_score": 4.1,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:36.760",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortisoar",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-105"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-22576",
+      "vendor": "Fortinet",
+      "product": "fortisoar",
+      "products": [
+        "fortisoar"
+      ],
+      "description": "A storing passwords in a recoverable format vulnerability in Fortinet FortiSOAR PaaS 7.6.0 through 7.6.4, FortiSOAR PaaS 7.5.0 through 7.5.2, FortiSOAR PaaS 7.4 all versions, FortiSOAR PaaS 7.3 all versions, FortiSOAR on-premise 7.6.0 through 7.6.4, FortiSOAR on-premise 7.5.0 through 7.5.2, FortiSOAR on-premise 7.4 all versions, FortiSOAR on-premise 7.3 all versions may allow an authenticated remote attacker to retrieve passwords for multiple installed connectors via server address modification in connector configuration.",
+      "cvss_score": 4.3,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:36.937",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortisoar",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-104"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20041",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in Cisco Nexus Dashboard and Cisco Nexus Dashboard Insights could allow an unauthenticated, remote attacker to conduct a server-side request forgery (SSRF) attack through an affected device.\r\n\r\nThis vulnerability is due to improper input validation for specific HTTP requests. An attacker could exploit this vulnerability by persuading an authenticated user of the device management interface to click a crafted link. A successful exploit could allow the attacker to send arbitrary network requests that are sourced from the affected device to an attacker-controlled server. The attacker could then execute arbitrary script code in the context of the affected interface or access sensitive browser-based information.",
+      "cvss_score": 6.1,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:25.917",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nd-ssrf-NAen4O7r"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20042",
+      "vendor": "Cisco",
+      "product": "nexus dashboard",
+      "products": [
+        "nexus dashboard"
+      ],
+      "description": "A vulnerability in the configuration backup feature of Cisco Nexus Dashboard could allow an attacker who has the encryption password and access to Full or Config-only backup files to access sensitive information.\r\n\r\nThis vulnerability exists because authentication details are included in the encrypted backup files. An attacker with a valid backup file and encryption password from an affected device could decrypt the backup file. The attacker could then use the authentication details in the backup file to access internal-only APIs on the affected device. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:26.173",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "nexus dashboard",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-nd-cbid-5YqkOSHu"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20085",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in the web-based management interface of Cisco IMC could allow an unauthenticated, remote attacker to conduct a reflected XSS attack against a user of the interface.\r\n\r\nThis vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the browser of the targeted user or access sensitive, browser-based information.",
+      "cvss_score": 6.1,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:26.337",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-xss-A2tkgVAB"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20087",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with administrative privileges to conduct a stored XSS attack against a user of the interface.\r\n\r\nThis vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the browser of the targeted user or access sensitive, browser-based information.",
+      "cvss_score": 4.8,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:26.863",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-xss-A2tkgVAB"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20088",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with administrative privileges to conduct a stored XSS attack against a user of the interface.\r\n\r\nThis vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the browser of the targeted user or access sensitive, browser-based information.",
+      "cvss_score": 4.8,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:27.457",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-xss-A2tkgVAB"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20089",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with administrative privileges to conduct a stored XSS attack against a user of the interface.\r\n\r\nThis vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the browser of the targeted user or access sensitive, browser-based information.",
+      "cvss_score": 4.8,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:27.977",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-xss-A2tkgVAB"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20090",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with administrative privileges to conduct a stored XSS attack against a user of the interface.\r\n\r\nThis vulnerability is due to insufficient validation of user input. An attacker could exploit this vulnerability by persuading a user of an affected interface to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the browser of the targeted user or access sensitive, browser-based information.",
+      "cvss_score": 4.8,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:28.503",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-xss-A2tkgVAB"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20093",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in the change password functionality of Cisco Integrated Management Controller (IMC) could allow an unauthenticated, remote attacker to bypass authentication and gain access to the system as&nbsp;Admin.\r\n\r\nThis vulnerability is due to incorrect handling of password change requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to bypass authentication, alter the passwords of any user on the system, including an&nbsp;Admin user, and gain access to the system as that user.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:29.027",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-auth-bypass-AgG2BxTn"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20094",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with read-only privileges to perform command injection attacks on an affected system and execute arbitrary commands as the root user.\r\n\r\nThis vulnerability is due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of the affected software. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system as the root user.",
+      "cvss_score": 8.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:29.230",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-cmd-inj-3hKN3bVt"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20095",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with admin-level privileges to perform command injection attacks on an affected system and&nbsp;execute arbitrary commands as the root user.\r\n\r\nThis vulnerability is due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of the affected software. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system as the root user. Cisco has assigned this vulnerability a Security Impact Rating (SIR) of High, rather than Medium as the score indicates, because additional security implications could occur once the attacker has become root.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:29.670",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-cmd-inj-3hKN3bVt"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20096",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with admin-level privileges to perform command injection attacks on an affected system and&nbsp;execute arbitrary commands as the root user.\r\n\r\nThis vulnerability is due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending crafted commands to the web-based management interface of the affected software. A successful exploit could allow the attacker to execute arbitrary commands on the underlying operating system as the root user. Cisco has assigned this vulnerability a Security Impact Rating (SIR) of High, rather than Medium as the score indicates, because additional security implications could occur once the attacker has become root.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:30.203",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-cmd-inj-3hKN3bVt"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20097",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with admin-level privileges to execute arbitrary code as the root user.&nbsp;This vulnerability is due to improper validation of user-supplied input to the web-based management interface. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allow the attacker to execute arbitrary code on the underlying operating system as the root user.\r\n\r\nCisco has assigned this vulnerability a SIR of High rather than Medium as the score indicates because additional security implications could occur when the attacker becomes root.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:30.733",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cimc-cmd-inj-3hKN3bVt"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20151",
+      "vendor": "Cisco",
+      "product": "smart software manager on-prem",
+      "products": [
+        "smart software manager on-prem"
+      ],
+      "description": "A vulnerability in the web interface of Cisco Smart Software Manager On-Prem (SSM On-Prem) could allow an authenticated, remote attacker to elevate privileges on an affected system.\r\n\r\nThis vulnerability is due to the improper transmission of sensitive user information. An attacker could exploit this vulnerability by sending a crafted message to an affected Cisco SSM On-Prem host and retrieving session credentials from subsequent status messages. A successful exploit could allow the attacker to elevate privileges on the affected system from low to administrative.\r\nTo exploit this vulnerability, the attacker must have valid credentials for a user account with at least the role of System User.\r\nNote: This vulnerability exposes information only about users who logged in to the Cisco SSM On-Prem host using the web interface and who are currently logged in. SSH sessions are not affected.",
+      "cvss_score": 7.3,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:31.097",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "smart software manager on-prem",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cssm-priv-esc-xRAnOuO8"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20155",
+      "vendor": "Cisco",
+      "product": "evolved programmable network manager",
+      "products": [
+        "evolved programmable network manager"
+      ],
+      "description": "A vulnerability in the web-based management interface of Cisco Evolved Programmable Network Manager (EPNM) could allow an authenticated, remote attacker with low privileges to access sensitive information that they are not authorized to access.\r\n\r\nThis vulnerability is due to improper authorization checks on a REST API endpoint of an affected device.&nbsp;An attacker could exploit this vulnerability by querying the affected endpoint. A successful exploit could allow the attacker to view session information of active Cisco EPNM users, including users with administrative privileges, which could result in the affected device being compromised.",
+      "cvss_score": 8.0,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:31.430",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "evolved programmable network manager",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-epnm-improp-auth-mUwFWUU3"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20160",
+      "vendor": "Cisco",
+      "product": "smart software manager on-prem",
+      "products": [
+        "smart software manager on-prem"
+      ],
+      "description": "A vulnerability in Cisco Smart Software Manager On-Prem (SSM On-Prem) could allow an unauthenticated, remote attacker to execute arbitrary commands on the underlying operating system of an affected SSM On-Prem host.\r\n\r\nThis vulnerability is due to the unintentional exposure of an&nbsp;internal service. An attacker could exploit this vulnerability by sending a crafted request to the API of the exposed service. A successful exploit could allow the attacker to execute commands on the underlying operating system with root-level privileges.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-04-01T17:28:31.760",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "smart software manager on-prem",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ssm-cli-execution-cHUcWuNr"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-33825",
+      "vendor": "Microsoft Defender",
+      "product": "defender antimalware platform",
+      "products": [
+        "defender antimalware platform"
+      ],
+      "description": "Insufficient granularity of access control in Microsoft Defender allows an authorized attacker to elevate privileges locally.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-14T18:17:35.100",
+      "patch_available": false,
+      "kev_status": true,
+      "versions": "defender antimalware platform",
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33825",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-33825",
+        "https://www.huntress.com/blog/nightmare-eclipse-intrusion"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-41091",
+      "vendor": "Microsoft Defender",
+      "product": "malware protection engine",
+      "products": [
+        "malware protection engine"
+      ],
+      "description": "Improper link resolution before file access ('link following') in Microsoft Defender allows an authorized attacker to elevate privileges locally.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-20T13:16:29.173",
+      "patch_available": false,
+      "kev_status": true,
+      "versions": "malware protection engine",
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41091",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-41091"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-45498",
+      "vendor": "Microsoft Defender",
+      "product": "defender antimalware platform",
+      "products": [
+        "defender antimalware platform"
+      ],
+      "description": "Microsoft Defender Denial of Service Vulnerability",
+      "cvss_score": 4.0,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-05-20T13:16:36.780",
+      "patch_available": false,
+      "kev_status": true,
+      "versions": "defender antimalware platform",
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45498",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-45498"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-45584",
+      "vendor": "Microsoft Defender",
+      "product": "malware protection engine",
+      "products": [
+        "malware protection engine"
+      ],
+      "description": "Heap-based buffer overflow in Microsoft Defender allows an unauthorized attacker to execute code over a network.",
+      "cvss_score": 8.1,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-20T13:16:37.333",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "malware protection engine",
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45584"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-45647",
+      "vendor": "Microsoft Defender",
+      "product": "defender for endpoint",
+      "products": [
+        "defender for endpoint"
+      ],
+      "description": "Time-of-check time-of-use (toctou) race condition in Microsoft Defender for Endpoint allows an authorized attacker to elevate privileges locally.",
+      "cvss_score": 5.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-06-09T17:17:31.797",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "defender for endpoint",
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45647"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-50656",
+      "vendor": "Microsoft Defender",
+      "product": "malware protection engine",
+      "products": [
+        "malware protection engine"
+      ],
+      "description": "Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as &quot;RoguePlanet &quot;.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-06-16T19:16:59.683",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "malware protection engine",
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50656",
+        "https://github.com/MSNightmare/RoguePlanet"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-55011",
+      "vendor": "Microsoft Defender",
+      "product": "malware protection engine",
+      "products": [
+        "malware protection engine"
+      ],
+      "description": "Integer underflow (wrap or wraparound) in Microsoft Defender allows an unauthorized attacker to execute code locally.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-14T17:17:08.990",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "malware protection engine",
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55011"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-55012",
+      "vendor": "Microsoft Defender",
+      "product": "malware protection engine",
+      "products": [
+        "malware protection engine"
+      ],
+      "description": "Integer overflow or wraparound in Microsoft Defender allows an unauthorized attacker to execute code locally.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-14T17:17:09.107",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "malware protection engine",
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-55012"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-50657",
+      "vendor": "Microsoft Defender",
+      "product": "defender for endpoint",
+      "products": [
+        "defender for endpoint"
+      ],
+      "description": "Exposure of private personal information to an unauthorized actor in Microsoft Defender allows an authorized attacker to disclose information locally.",
+      "cvss_score": 4.7,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-07-14T18:17:59.303",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "defender for endpoint",
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50657"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-50658",
+      "vendor": "Microsoft Defender",
+      "product": "defender for endpoint",
+      "products": [
+        "defender for endpoint"
+      ],
+      "description": "Time-of-check time-of-use (toctou) race condition in Microsoft Defender allows an authorized attacker to elevate privileges locally.",
+      "cvss_score": 7.0,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-14T18:17:59.563",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "defender for endpoint",
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50658"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-56178",
+      "vendor": "Microsoft Defender",
+      "product": "defender for endpoint",
+      "products": [
+        "defender for endpoint"
+      ],
+      "description": "Time-of-check time-of-use (toctou) race condition in Microsoft Defender for Endpoint allows an authorized attacker to elevate privileges locally.",
+      "cvss_score": 5.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-07-14T18:18:23.917",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "defender for endpoint",
+      "references": [
+        "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-56178"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20751",
+      "vendor": "VMware",
+      "product": "VMware",
+      "products": [
+        "VMware"
+      ],
+      "description": "Out-of-bounds read for the Intel(R) Data Center Graphics Driver for VMware ESXi software before version 2.0.2 within Ring 1: Device Drivers may allow a denial of service. System software adversary with a privileged user combined with a low complexity attack may enable data exposure. This result may potentially occur via local access when attack requirements are not present without special internal knowledge and requires no user interaction. The potential vulnerability may impact the confidentiality (high), integrity (none) and availability (high) of the vulnerable system, resulting in subsequent system confidentiality (high), integrity (none) and availability (high) impacts.",
+      "cvss_score": 0.0,
+      "severity": "UNSCORED",
+      "unscored": true,
+      "published_date": "2026-05-12T17:16:17.220",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://intel.com/content/www/us/en/security-center/advisory/intel-sa-01402.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20794",
+      "vendor": "VMware",
+      "product": "VMware",
+      "products": [
+        "VMware"
+      ],
+      "description": "Buffer overflow for the Intel(R) Data Center Graphics Driver for VMware ESXi software before version 2.0.2 within Ring 1: Device Drivers may allow an escalation of privilege. System software adversary with a privileged user combined with a low complexity attack may enable local code execution. This result may potentially occur via local access when attack requirements are not present without special internal knowledge and requires no user interaction. The potential vulnerability may impact the confidentiality (high), integrity (high) and availability (high) of the vulnerable system, resulting in subsequent system confidentiality (high), integrity (high) and availability (high) impacts.",
+      "cvss_score": 0.0,
+      "severity": "UNSCORED",
+      "unscored": true,
+      "published_date": "2026-05-12T17:16:19.240",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://intel.com/content/www/us/en/security-center/advisory/intel-sa-01402.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20879",
+      "vendor": "VMware",
+      "product": "VMware",
+      "products": [
+        "VMware"
+      ],
+      "description": "Out-of-bounds write for the Intel(R) Data Center Graphics Driver for VMware ESXi software before version 2.0.2 within Ring 1: Device Drivers may allow a denial of service. System software adversary with a privileged user combined with a low complexity attack may enable data corruption. This result may potentially occur via local access when attack requirements are not present without special internal knowledge and requires no user interaction. The potential vulnerability may impact the confidentiality (none), integrity (high) and availability (high) of the vulnerable system, resulting in subsequent system confidentiality (none), integrity (high) and availability (high) impacts.",
+      "cvss_score": 0.0,
+      "severity": "UNSCORED",
+      "unscored": true,
+      "published_date": "2026-05-12T17:16:19.363",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://intel.com/content/www/us/en/security-center/advisory/intel-sa-01402.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-62623",
+      "vendor": "VMware",
+      "product": "VMware",
+      "products": [
+        "VMware"
+      ],
+      "description": "A heap-based buffer overflow in the ionic cloud driver for VMware ESXi could allow an attacker to achieve privilege escalation, potentially resulting in arbitrary code execution.",
+      "cvss_score": 0.0,
+      "severity": "UNSCORED",
+      "unscored": true,
+      "published_date": "2026-05-13T04:17:35.217",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-2001.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-62624",
+      "vendor": "VMware",
+      "product": "VMware",
+      "products": [
+        "VMware"
+      ],
+      "description": "A heap-based buffer overflow in the ionic cloud driver for VMware ESXi could allow an attacker to achieve privilege escalation, potentially resulting in arbitrary code execution.",
+      "cvss_score": 0.0,
+      "severity": "UNSCORED",
+      "unscored": true,
+      "published_date": "2026-05-13T04:17:35.607",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-2001.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-62627",
+      "vendor": "VMware",
+      "product": "VMware",
+      "products": [
+        "VMware"
+      ],
+      "description": "An untrusted pointer dereference in the ionic cloud driver for VMWare ESXi could allow an attacker with an unprivileged VM to read kernel memory or co-located guest VM memory, potentially resulting in loss of confidentiality or availability.",
+      "cvss_score": 0.0,
+      "severity": "UNSCORED",
+      "unscored": true,
+      "published_date": "2026-05-13T04:17:35.780",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://www.amd.com/en/resources/product-security/bulletin/AMD-SB-2001.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-41702",
+      "vendor": "VMware",
+      "product": "fusion",
+      "products": [
+        "fusion"
+      ],
+      "description": "VMware Fusion contains a TOCTOU (Time-of-check Time-of-use) vulnerability that occurs during an operation performed by a SETUID binary. A malicious actor with local non-administrative user privileges may exploit this vulnerability to escalate privileges to root on the system where Fusion is installed.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-15T07:16:18.923",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fusion",
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37454"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-41722",
+      "vendor": "VMware",
+      "product": "aria operations",
+      "products": [
+        "aria operations",
+        "cloud foundation",
+        "telco cloud platform",
+        "vsphere"
+      ],
+      "description": "VMware Cloud Foundation Operations contains multiple stored cross-site scripting vulnerabilities.A malicious actor with privileges to create policies, views or text-widgets may be able to inject scripts to perform administrative actions in VMware Cloud Foundation Operations.",
+      "cvss_score": 8.0,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-06-08T09:16:30.363",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "aria operations, cloud foundation, telco cloud platform, vsphere",
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37513"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-41723",
+      "vendor": "VMware",
+      "product": "aria operations",
+      "products": [
+        "aria operations",
+        "cloud foundation",
+        "telco cloud platform",
+        "vsphere"
+      ],
+      "description": "VMware Cloud Foundation Operations contains multiple stored cross-site scripting vulnerabilities.A malicious actor with privileges to create policies, views or text-widgets may be able to inject scripts to perform administrative actions in VMware Cloud Foundation Operations.",
+      "cvss_score": 8.0,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-06-08T09:16:30.567",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "aria operations, cloud foundation, telco cloud platform, vsphere",
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37513"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-41724",
+      "vendor": "VMware",
+      "product": "aria operations",
+      "products": [
+        "aria operations",
+        "cloud foundation",
+        "telco cloud platform"
+      ],
+      "description": "VMware Cloud Foundation Operations contains multiple stored cross-site scripting vulnerabilities.A malicious actor with privileges to create policies, views or text-widgets may be able to inject scripts to perform administrative actions in VMware Cloud Foundation Operations.",
+      "cvss_score": 8.0,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-06-08T09:16:30.693",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "aria operations, cloud foundation, telco cloud platform",
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37513"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-47865",
+      "vendor": "VMware",
+      "product": "VMware",
+      "products": [
+        "VMware"
+      ],
+      "description": "VMware Avi Load Balancer contains an authentication bypass vulnerability. A malicious user with network access may be able to access the Avi Control plane by bypassing the authentication mechanism.\n\nAffected versions:\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 through 22.1.7 (fixed in 30.2.7)",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-07-18T09:17:08.287",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37926"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-47866",
+      "vendor": "VMware",
+      "product": "VMware",
+      "products": [
+        "VMware"
+      ],
+      "description": "VMware Avi Load Balancer contains an authorization bypass vulnerability. A malicious actor on the network can access a limited subset of the Avi Control Plane without proper authorization.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 through 22.1.7 (fixed in 30.2.7)",
+      "cvss_score": 8.3,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-18T09:17:08.413",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37926"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-47867",
+      "vendor": "VMware",
+      "product": "VMware",
+      "products": [
+        "VMware"
+      ],
+      "description": "VMware Avi Load Balancer contains a remote code execution vulnerability. A malicious user with network access may be able to access the Avi Control plane and execute code remotely.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 through 22.1.7 (fixed in 30.2.7)",
+      "cvss_score": 8.7,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-18T09:17:08.527",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37926"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-47868",
+      "vendor": "VMware",
+      "product": "VMware",
+      "products": [
+        "VMware"
+      ],
+      "description": "VMware Avi Load Balancer contains a local privilege escalation vulnerability. A malicious user with local access may be able to escalate their privileges to run code as root.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 through 22.1.7 (fixed in 30.2.7)",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-18T09:17:08.627",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37926"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-47869",
+      "vendor": "VMware",
+      "product": "VMware",
+      "products": [
+        "VMware"
+      ],
+      "description": "VMware Avi Load Balancer contains a remote code execution vulnerability. A malicious authenticated user with network access may be able to inject and execute code.\n\nAffected versions:\n32.1.1 (fixed in 32.1.2)\n31.1.1 through 31.2.2 (fixed in 31.2.2-2p3)\n30.1.1 through 30.2.6 (fixed in 30.2.7)\n22.1.1 through 22.1.7 (fixed in 30.2.7)",
+      "cvss_score": 8.7,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-18T09:17:08.740",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/37926"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-40050",
+      "vendor": "CrowdStrike",
+      "product": "CrowdStrike",
+      "products": [
+        "CrowdStrike"
+      ],
+      "description": "CrowdStrike has released security updates to address a critical unauthenticated path traversal vulnerability (CVE-2026-40050) in LogScale. This vulnerability only requires mitigation by customers that host specific versions of LogScale and does not affect Next-Gen SIEM customers. The vulnerability exists in a specific cluster API endpoint that, if exposed, allows a remote attacker to read arbitrary files from the server filesystem without authentication.\n\nNext-Gen SIEM customers are not affected and do not need to take any action. CrowdStrike mitigated the vulnerability for LogScale SaaS customers by deploying network-layer blocks to all clusters on April 7, 2026. We have proactively reviewed all log data and there is no evidence of exploitation.\n\nLogScale Self-hosted customers should upgrade to a patched version immediately to remediate the vulnerability.\n\nCrowdStrike identified this vulnerability during continuous and ongoing product testing.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-04-21T17:16:53.610",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://www.crowdstrike.com/en-us/security-advisories/cve-2026-40050/"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-3776",
+      "vendor": "Check Point",
+      "product": "macos",
+      "products": [
+        "macos",
+        "pdf editor",
+        "pdf reader",
+        "windows"
+      ],
+      "description": "The application does not validate the presence of required appearance (AP) data before accessing stamp annotation resources. When a PDF contains a stamp annotation missing its AP entry, the code continues to dereference the associated object without a prior null or validity check, which allows a crafted document to trigger a null pointer dereference and crash the application, resulting in denial of service.",
+      "cvss_score": 5.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-01T02:16:02.590",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "macos, pdf editor, pdf reader, windows",
+      "references": [
+        "https://www.foxit.com/support/security-bulletins.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-23406",
+      "vendor": "Check Point",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\napparmor: fix side-effect bug in match_char() macro usage\n\nThe match_char() macro evaluates its character parameter multiple\ntimes when traversing differential encoding chains. When invoked\nwith *str++, the string pointer advances on each iteration of the\ninner do-while loop, causing the DFA to check different characters\nat each iteration and therefore skip input characters.\nThis results in out-of-bounds reads when the pointer advances past\nthe input buffer boundary.\n\n[   94.984676] ==================================================================\n[   94.985301] BUG: KASAN: slab-out-of-bounds in aa_dfa_match+0x5ae/0x760\n[   94.985655] Read of size 1 at addr ffff888100342000 by task file/976\n\n[   94.986319] CPU: 7 UID: 1000 PID: 976 Comm: file Not tainted 6.19.0-rc7-next-20260127 #1 PREEMPT(lazy)\n[   94.986322] Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 1.16.3-debian-1.16.3-2 04/01/2014\n[   94.986329] Call Trace:\n[   94.986341]  <TASK>\n[   94.986347]  dump_stack_lvl+0x5e/0x80\n[   94.986374]  print_report+0xc8/0x270\n[   94.986384]  ? aa_dfa_match+0x5ae/0x760\n[   94.986388]  kasan_report+0x118/0x150\n[   94.986401]  ? aa_dfa_match+0x5ae/0x760\n[   94.986405]  aa_dfa_match+0x5ae/0x760\n[   94.986408]  __aa_path_perm+0x131/0x400\n[   94.986418]  aa_path_perm+0x219/0x2f0\n[   94.986424]  apparmor_file_open+0x345/0x570\n[   94.986431]  security_file_open+0x5c/0x140\n[   94.986442]  do_dentry_open+0x2f6/0x1120\n[   94.986450]  vfs_open+0x38/0x2b0\n[   94.986453]  ? may_open+0x1e2/0x2b0\n[   94.986466]  path_openat+0x231b/0x2b30\n[   94.986469]  ? __x64_sys_openat+0xf8/0x130\n[   94.986477]  do_file_open+0x19d/0x360\n[   94.986487]  do_sys_openat2+0x98/0x100\n[   94.986491]  __x64_sys_openat+0xf8/0x130\n[   94.986499]  do_syscall_64+0x8e/0x660\n[   94.986515]  ? count_memcg_events+0x15f/0x3c0\n[   94.986526]  ? srso_alias_return_thunk+0x5/0xfbef5\n[   94.986540]  ? handle_mm_fault+0x1639/0x1ef0\n[   94.986551]  ? vma_start_read+0xf0/0x320\n[   94.986558]  ? srso_alias_return_thunk+0x5/0xfbef5\n[   94.986561]  ? srso_alias_return_thunk+0x5/0xfbef5\n[   94.986563]  ? fpregs_assert_state_consistent+0x50/0xe0\n[   94.986572]  ? srso_alias_return_thunk+0x5/0xfbef5\n[   94.986574]  ? arch_exit_to_user_mode_prepare+0x9/0xb0\n[   94.986587]  ? srso_alias_return_thunk+0x5/0xfbef5\n[   94.986588]  ? irqentry_exit+0x3c/0x590\n[   94.986595]  entry_SYSCALL_64_after_hwframe+0x76/0x7e\n[   94.986597] RIP: 0033:0x7fda4a79c3ea\n\nFix by extracting the character value before invoking match_char,\nensuring single evaluation per outer loop.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-01T09:16:16.327",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/0510d1ba0976f97f521feb2b75b0572ea5df3ceb",
+        "https://git.kernel.org/stable/c/1fc94f16098213d01e56c97feed9b3ecf0147a37",
+        "https://git.kernel.org/stable/c/383b7270faf42564f133134c2fc3c24bbae52615",
+        "https://git.kernel.org/stable/c/5a184f7cbdeaad17e16dedf3c17d0cd622edfed8",
+        "https://git.kernel.org/stable/c/8756b68edae37ff546c02091989a4ceab3f20abd"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-23419",
+      "vendor": "Check Point",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/rds: Fix circular locking dependency in rds_tcp_tune\n\nsyzbot reported a circular locking dependency in rds_tcp_tune() where\nsk_net_refcnt_upgrade() is called while holding the socket lock:\n\n======================================================\nWARNING: possible circular locking dependency detected\n======================================================\nkworker/u10:8/15040 is trying to acquire lock:\nffffffff8e9aaf80 (fs_reclaim){+.+.}-{0:0},\nat: __kmalloc_cache_noprof+0x4b/0x6f0\n\nbut task is already holding lock:\nffff88805a3c1ce0 (k-sk_lock-AF_INET6){+.+.}-{0:0},\nat: rds_tcp_tune+0xd7/0x930\n\nThe issue occurs because sk_net_refcnt_upgrade() performs memory\nallocation (via get_net_track() -> ref_tracker_alloc()) while the\nsocket lock is held, creating a circular dependency with fs_reclaim.\n\nFix this by moving sk_net_refcnt_upgrade() outside the socket lock\ncritical section. This is safe because the fields modified by the\nsk_net_refcnt_upgrade() call (sk_net_refcnt, ns_tracker) are not\naccessed by any concurrent code path at this point.\n\nv2:\n  - Corrected fixes tag\n  - check patch line wrap nits\n  - ai commentary nits",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-03T14:16:27.843",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/026bbaeeab9e04534ee58882b6447300629b42f6",
+        "https://git.kernel.org/stable/c/6a877ececd6daa002a9a0002cd0fbca6592a9244",
+        "https://git.kernel.org/stable/c/6ce948fa54599f369ff7fe8b793a6aae4b0762b2",
+        "https://git.kernel.org/stable/c/8519e6883a942e510f33a0e634e27bcc3a844a40",
+        "https://git.kernel.org/stable/c/8babb271403378ba6836f6c8599c5313d0e2355d"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-23435",
+      "vendor": "Check Point",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nperf/x86: Move event pointer setup earlier in x86_pmu_enable()\n\nA production AMD EPYC system crashed with a NULL pointer dereference\nin the PMU NMI handler:\n\n  BUG: kernel NULL pointer dereference, address: 0000000000000198\n  RIP: x86_perf_event_update+0xc/0xa0\n  Call Trace:\n   <NMI>\n   amd_pmu_v2_handle_irq+0x1a6/0x390\n   perf_event_nmi_handler+0x24/0x40\n\nThe faulting instruction is `cmpq $0x0, 0x198(%rdi)` with RDI=0,\ncorresponding to the `if (unlikely(!hwc->event_base))` check in\nx86_perf_event_update() where hwc = &event->hw and event is NULL.\n\ndrgn inspection of the vmcore on CPU 106 showed a mismatch between\ncpuc->active_mask and cpuc->events[]:\n\n  active_mask: 0x1e (bits 1, 2, 3, 4)\n  events[1]:   0xff1100136cbd4f38  (valid)\n  events[2]:   0x0                 (NULL, but active_mask bit 2 set)\n  events[3]:   0xff1100076fd2cf38  (valid)\n  events[4]:   0xff1100079e990a90  (valid)\n\nThe event that should occupy events[2] was found in event_list[2]\nwith hw.idx=2 and hw.state=0x0, confirming x86_pmu_start() had run\n(which clears hw.state and sets active_mask) but events[2] was\nnever populated.\n\nAnother event (event_list[0]) had hw.state=0x7 (STOPPED|UPTODATE|ARCH),\nshowing it was stopped when the PMU rescheduled events, confirming the\nthrottle-then-reschedule sequence occurred.\n\nThe root cause is commit 7e772a93eb61 (\"perf/x86: Fix NULL event access\nand potential PEBS record loss\") which moved the cpuc->events[idx]\nassignment out of x86_pmu_start() and into step 2 of x86_pmu_enable(),\nafter the PERF_HES_ARCH check. This broke any path that calls\npmu->start() without going through x86_pmu_enable() -- specifically\nthe unthrottle path:\n\n  perf_adjust_freq_unthr_events()\n    -> perf_event_unthrottle_group()\n      -> perf_event_unthrottle()\n        -> event->pmu->start(event, 0)\n          -> x86_pmu_start()     // sets active_mask but not events[]\n\nThe race sequence is:\n\n  1. A group of perf events overflows, triggering group throttle via\n     perf_event_throttle_group(). All events are stopped: active_mask\n     bits cleared, events[] preserved (x86_pmu_stop no longer clears\n     events[] after commit 7e772a93eb61).\n\n  2. While still throttled (PERF_HES_STOPPED), x86_pmu_enable() runs\n     due to other scheduling activity. Stopped events that need to\n     move counters get PERF_HES_ARCH set and events[old_idx] cleared.\n     In step 2 of x86_pmu_enable(), PERF_HES_ARCH causes these events\n     to be skipped -- events[new_idx] is never set.\n\n  3. The timer tick unthrottles the group via pmu->start(). Since\n     commit 7e772a93eb61 removed the events[] assignment from\n     x86_pmu_start(), active_mask[new_idx] is set but events[new_idx]\n     remains NULL.\n\n  4. A PMC overflow NMI fires. The handler iterates active counters,\n     finds active_mask[2] set, reads events[2] which is NULL, and\n     crashes dereferencing it.\n\nMove the cpuc->events[hwc->idx] assignment in x86_pmu_enable() to\nbefore the PERF_HES_ARCH check, so that events[] is populated even\nfor events that are not immediately started. This ensures the\nunthrottle path via pmu->start() always finds a valid event pointer.",
+      "cvss_score": 5.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-03T16:16:25.083",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/886fa869153917d902784098922defa20c3a2fe5",
+        "https://git.kernel.org/stable/c/8d5fae6011260de209aaf231120e8146b14bc8e0",
+        "https://git.kernel.org/stable/c/c1dd1e2b722d3f1f2e4977dad8d1be78fdfb30cb"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-23438",
+      "vendor": "Check Point",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: mvpp2: guard flow control update with global_tx_fc in buffer switching\n\nmvpp2_bm_switch_buffers() unconditionally calls\nmvpp2_bm_pool_update_priv_fc() when switching between per-cpu and\nshared buffer pool modes. This function programs CM3 flow control\nregisters via mvpp2_cm3_read()/mvpp2_cm3_write(), which dereference\npriv->cm3_base without any NULL check.\n\nWhen the CM3 SRAM resource is not present in the device tree (the\nthird reg entry added by commit 60523583b07c (\"dts: marvell: add CM3\nSRAM memory to cp11x ethernet device tree\")), priv->cm3_base remains\nNULL and priv->global_tx_fc is false. Any operation that triggers\nmvpp2_bm_switch_buffers(), for example an MTU change that crosses\nthe jumbo frame threshold, will crash:\n\n  Unable to handle kernel NULL pointer dereference at\n  virtual address 0000000000000000\n  Mem abort info:\n    ESR = 0x0000000096000006\n    EC = 0x25: DABT (current EL), IL = 32 bits\n  pc : readl+0x0/0x18\n  lr : mvpp2_cm3_read.isra.0+0x14/0x20\n  Call trace:\n   readl+0x0/0x18\n   mvpp2_bm_pool_update_fc+0x40/0x12c\n   mvpp2_bm_pool_update_priv_fc+0x94/0xd8\n   mvpp2_bm_switch_buffers.isra.0+0x80/0x1c0\n   mvpp2_change_mtu+0x140/0x380\n   __dev_set_mtu+0x1c/0x38\n   dev_set_mtu_ext+0x78/0x118\n   dev_set_mtu+0x48/0xa8\n   dev_ifsioc+0x21c/0x43c\n   dev_ioctl+0x2d8/0x42c\n   sock_ioctl+0x314/0x378\n\nEvery other flow control call site in the driver already guards\nhardware access with either priv->global_tx_fc or port->tx_fc.\nmvpp2_bm_switch_buffers() is the only place that omits this check.\n\nAdd the missing priv->global_tx_fc guard to both the disable and\nre-enable calls in mvpp2_bm_switch_buffers(), consistent with the\nrest of the driver.",
+      "cvss_score": 5.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-03T16:16:25.540",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/0cfcd31f98fc608dc9406bff3fee3a9dd364d014",
+        "https://git.kernel.org/stable/c/7bd20f4b3ef3044dc55acd5b8ef748a70d29d03f",
+        "https://git.kernel.org/stable/c/7df2b50cae1a76cbb90b294f3edb61e3e10bf2e9",
+        "https://git.kernel.org/stable/c/8a63baadf08453f66eb582fdb6dd234f72024723",
+        "https://git.kernel.org/stable/c/8baced53a35fc9710f80d6ca016a2c418dc3231f"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-23442",
+      "vendor": "Check Point",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv6: add NULL checks for idev in SRv6 paths\n\n__in6_dev_get() can return NULL when the device has no IPv6 configuration\n(e.g. MTU < IPV6_MIN_MTU or after NETDEV_UNREGISTER).\n\nAdd NULL checks for idev returned by __in6_dev_get() in both\nseg6_hmac_validate_skb() and ipv6_srh_rcv() to prevent potential NULL\npointer dereferences.",
+      "cvss_score": 5.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-03T16:16:28.423",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/0348fa0ada37cef7c6b5ab2a428bb2c6aee784e4",
+        "https://git.kernel.org/stable/c/06413793526251870e20402c39930804f14d59c0",
+        "https://git.kernel.org/stable/c/50352fc103928e10e8729abc79a0d05abef26c4d",
+        "https://git.kernel.org/stable/c/83d705d35e583cb1b1eacf196dfe7b77d442018e",
+        "https://git.kernel.org/stable/c/a25853c9feea7bbf31d157ff6e004d2d3b4f7f13"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-23450",
+      "vendor": "Check Point",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/smc: fix NULL dereference and UAF in smc_tcp_syn_recv_sock()\n\nSyzkaller reported a panic in smc_tcp_syn_recv_sock() [1].\n\nsmc_tcp_syn_recv_sock() is called in the TCP receive path\n(softirq) via icsk_af_ops->syn_recv_sock on the clcsock (TCP\nlistening socket). It reads sk_user_data to get the smc_sock\npointer. However, when the SMC listen socket is being closed\nconcurrently, smc_close_active() sets clcsock->sk_user_data\nto NULL under sk_callback_lock, and then the smc_sock itself\ncan be freed via sock_put() in smc_release().\n\nThis leads to two issues:\n\n1) NULL pointer dereference: sk_user_data is NULL when\n   accessed.\n2) Use-after-free: sk_user_data is read as non-NULL, but the\n   smc_sock is freed before its fields (e.g., queued_smc_hs,\n   ori_af_ops) are accessed.\n\nThe race window looks like this (the syzkaller crash [1]\ntriggers via the SYN cookie path: tcp_get_cookie_sock() ->\nsmc_tcp_syn_recv_sock(), but the normal tcp_check_req() path\nhas the same race):\n\n  CPU A (softirq)              CPU B (process ctx)\n\n  tcp_v4_rcv()\n    TCP_NEW_SYN_RECV:\n    sk = req->rsk_listener\n    sock_hold(sk)\n    /* No lock on listener */\n                               smc_close_active():\n                                 write_lock_bh(cb_lock)\n                                 sk_user_data = NULL\n                                 write_unlock_bh(cb_lock)\n                                 ...\n                                 smc_clcsock_release()\n                                 sock_put(smc->sk) x2\n                                   -> smc_sock freed!\n    tcp_check_req()\n      smc_tcp_syn_recv_sock():\n        smc = user_data(sk)\n          -> NULL or dangling\n        smc->queued_smc_hs\n          -> crash!\n\nNote that the clcsock and smc_sock are two independent objects\nwith separate refcounts. TCP stack holds a reference on the\nclcsock, which keeps it alive, but this does NOT prevent the\nsmc_sock from being freed.\n\nFix this by using RCU and refcount_inc_not_zero() to safely\naccess smc_sock. Since smc_tcp_syn_recv_sock() is called in\nthe TCP three-way handshake path, taking read_lock_bh on\nsk_callback_lock is too heavy and would not survive a SYN\nflood attack. Using rcu_read_lock() is much more lightweight.\n\n- Set SOCK_RCU_FREE on the SMC listen socket so that\n  smc_sock freeing is deferred until after the RCU grace\n  period. This guarantees the memory is still valid when\n  accessed inside rcu_read_lock().\n- Use rcu_read_lock() to protect reading sk_user_data.\n- Use refcount_inc_not_zero(&smc->sk.sk_refcnt) to pin the\n  smc_sock. If the refcount has already reached zero (close\n  path completed), it returns false and we bail out safely.\n\nNote: smc_hs_congested() has a similar lockless read of\nsk_user_data without rcu_read_lock(), but it only checks for\nNULL and accesses the global smc_hs_wq, never dereferencing\nany smc_sock field, so it is not affected.\n\nReproducer was verified with mdelay injection and smc_run,\nthe issue no longer occurs with this patch applied.\n\n[1] https://syzkaller.appspot.com/bug?extid=827ae2bfb3a3529333e9",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-04-03T16:16:31.243",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/1e4f873879e075bbd4eb1c644d6933303ac5eba4",
+        "https://git.kernel.org/stable/c/1fab5ece76fb42a761178dcd0ebcbf578377b0dd",
+        "https://git.kernel.org/stable/c/6d5e4538364b9ceb1ac2941a4deb86650afb3538",
+        "https://git.kernel.org/stable/c/cadf3da46c15523fba90d80c9955f536ee3b4023",
+        "https://git.kernel.org/stable/c/f00fc26c8a06442b225a350fe000c0a11483e6a3"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-23458",
+      "vendor": "Check Point",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: ctnetlink: fix use-after-free in ctnetlink_dump_exp_ct()\n\nctnetlink_dump_exp_ct() stores a conntrack pointer in cb->data for the\nnetlink dump callback ctnetlink_exp_ct_dump_table(), but drops the\nconntrack reference immediately after netlink_dump_start().  When the\ndump spans multiple rounds, the second recvmsg() triggers the dump\ncallback which dereferences the now-freed conntrack via nfct_help(ct),\nleading to a use-after-free on ct->ext.\n\nThe bug is that the netlink_dump_control has no .start or .done\ncallbacks to manage the conntrack reference across dump rounds.  Other\ndump functions in the same file (e.g. ctnetlink_get_conntrack) properly\nuse .start/.done callbacks for this purpose.\n\nFix this by adding .start and .done callbacks that hold and release the\nconntrack reference for the duration of the dump, and move the\nnfct_help() call after the cb->args[0] early-return check in the dump\ncallback to avoid dereferencing ct->ext unnecessarily.\n\n BUG: KASAN: slab-use-after-free in ctnetlink_exp_ct_dump_table+0x4f/0x2e0\n Read of size 8 at addr ffff88810597ebf0 by task ctnetlink_poc/133\n\n CPU: 1 UID: 0 PID: 133 Comm: ctnetlink_poc Not tainted 7.0.0-rc2+ #3 PREEMPTLAZY\n Call Trace:\n  <TASK>\n  ctnetlink_exp_ct_dump_table+0x4f/0x2e0\n  netlink_dump+0x333/0x880\n  netlink_recvmsg+0x3e2/0x4b0\n  ? aa_sk_perm+0x184/0x450\n  sock_recvmsg+0xde/0xf0\n\n Allocated by task 133:\n  kmem_cache_alloc_noprof+0x134/0x440\n  __nf_conntrack_alloc+0xa8/0x2b0\n  ctnetlink_create_conntrack+0xa1/0x900\n  ctnetlink_new_conntrack+0x3cf/0x7d0\n  nfnetlink_rcv_msg+0x48e/0x510\n  netlink_rcv_skb+0xc9/0x1f0\n  nfnetlink_rcv+0xdb/0x220\n  netlink_unicast+0x3ec/0x590\n  netlink_sendmsg+0x397/0x690\n  __sys_sendmsg+0xf4/0x180\n\n Freed by task 0:\n  slab_free_after_rcu_debug+0xad/0x1e0\n  rcu_core+0x5c3/0x9c0",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-03T16:16:32.647",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/04c8907ce4e3d3e26c5e1a3e47aa5d17082cbb56",
+        "https://git.kernel.org/stable/c/5cb81eeda909dbb2def209dd10636b51549a3f8a",
+        "https://git.kernel.org/stable/c/9821b47f669eb82791fa0b1a6ebaf9aa219bea72",
+        "https://git.kernel.org/stable/c/bdf2724eefd4455a66863abb025bab8d3aa98c57",
+        "https://git.kernel.org/stable/c/cd541f15b60e2257441398cf495d978f816d09f8"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-23460",
+      "vendor": "Check Point",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/rose: fix NULL pointer dereference in rose_transmit_link on reconnect\n\nsyzkaller reported a bug [1], and the reproducer is available at [2].\n\nROSE sockets use four sk->sk_state values: TCP_CLOSE, TCP_LISTEN,\nTCP_SYN_SENT, and TCP_ESTABLISHED. rose_connect() already rejects\ncalls for TCP_ESTABLISHED (-EISCONN) and TCP_CLOSE with SS_CONNECTING\n(-ECONNREFUSED), but lacks a check for TCP_SYN_SENT.\n\nWhen rose_connect() is called a second time while the first connection\nattempt is still in progress (TCP_SYN_SENT), it overwrites\nrose->neighbour via rose_get_neigh(). If that returns NULL, the socket\nis left with rose->state == ROSE_STATE_1 but rose->neighbour == NULL.\nWhen the socket is subsequently closed, rose_release() sees\nROSE_STATE_1 and calls rose_write_internal() ->\nrose_transmit_link(skb, NULL), causing a NULL pointer dereference.\n\nPer connect(2), a second connect() while a connection is already in\nprogress should return -EALREADY. Add this missing check for\nTCP_SYN_SENT to complete the state validation in rose_connect().\n\n[1] https://syzkaller.appspot.com/bug?extid=d00f90e0af54102fb271\n[2] https://gist.github.com/mrpre/9e6779e0d13e2c66779b1653fef80516",
+      "cvss_score": 5.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-03T16:16:32.963",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/0c3e8bff808f17ad37a51d8e719eed22c7863120",
+        "https://git.kernel.org/stable/c/0c9fb70a206a8734e10468ecc24d57c7596cf64e",
+        "https://git.kernel.org/stable/c/508f49ccbe0329641bb681f7d0052bb4e5943252",
+        "https://git.kernel.org/stable/c/a12254050e3050f1011cd24f3b880a6882d0139d",
+        "https://git.kernel.org/stable/c/a753844d2a8136f090123c8fb1ff6c7f6ee7c2b3"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-34777",
+      "vendor": "Check Point",
+      "product": "electron",
+      "products": [
+        "electron"
+      ],
+      "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to versions 38.8.6, 39.8.1, 40.8.1, and 41.0.0, when an iframe requests fullscreen, pointerLock, keyboardLock, openExternal, or media permissions, the origin passed to session.setPermissionRequestHandler() was the top-level page's origin rather than the requesting iframe's origin. Apps that grant permissions based on the origin parameter or webContents.getURL() may inadvertently grant permissions to embedded third-party content. The correct requesting URL remains available via details.requestingUrl. Apps that already check details.requestingUrl are not affected. This issue has been patched in versions 38.8.6, 39.8.1, 40.8.1, and 41.0.0.",
+      "cvss_score": 5.4,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-04T00:16:18.907",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "electron",
+      "references": [
+        "https://github.com/electron/electron/security/advisories/GHSA-r5p7-gp4j-qhrx"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-31405",
+      "vendor": "Check Point",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: dvb-net: fix OOB access in ULE extension header tables\n\nThe ule_mandatory_ext_handlers[] and ule_optional_ext_handlers[] tables\nin handle_one_ule_extension() are declared with 255 elements (valid\nindices 0-254), but the index htype is derived from network-controlled\ndata as (ule_sndu_type & 0x00FF), giving a range of 0-255. When\nhtype equals 255, an out-of-bounds read occurs on the function pointer\ntable, and the OOB value may be called as a function pointer.\n\nAdd a bounds check on htype against the array size before either table\nis accessed. Out-of-range values now cause the SNDU to be discarded.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-04-06T08:16:38.253",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/145e50c2c700fa52b840df7bab206043997dd18e",
+        "https://git.kernel.org/stable/c/1a6da3dbb9985d00743073a1cc1f96e59f5abc30",
+        "https://git.kernel.org/stable/c/24d87712727a5017ad142d63940589a36cd25647",
+        "https://git.kernel.org/stable/c/29ef43ceb121d67b87f4cbb08439e4e9e732eff8",
+        "https://git.kernel.org/stable/c/8bde543d2a5f935ba2a6a6325a2e02f8a9256fbe"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-28388",
+      "vendor": "Check Point",
+      "product": "openssl",
+      "products": [
+        "openssl"
+      ],
+      "description": "Issue summary: When a delta CRL that contains a Delta CRL Indicator extension\nis processed a NULL pointer dereference might happen if the required CRL\nNumber extension is missing.\n\nImpact summary: A NULL pointer dereference can trigger a crash which\nleads to a Denial of Service for an application.\n\nWhen CRL processing and delta CRL processing is enabled during X.509\ncertificate verification, the delta CRL processing does not check\nwhether the CRL Number extension is NULL before dereferencing it.\nWhen a malformed delta CRL file is being processed, this parameter\ncan be NULL, causing a NULL pointer dereference.\n\nExploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in\nthe verification context, the certificate being verified to contain a\nfreshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and\nan attacker to provide a malformed CRL to an application that processes it.\n\nThe vulnerability is limited to Denial of Service and cannot be escalated to\nachieve code execution or memory disclosure. For that reason the issue was\nassessed as Low severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the affected code is outside the OpenSSL FIPS module boundary.",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-07T22:16:20.863",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "openssl",
+      "references": [
+        "https://github.com/openssl/openssl/commit/59c3b3158553ab53275bbbccca5cb305d591cf2e",
+        "https://github.com/openssl/openssl/commit/5a0b4930779cd2408880979db765db919da55139",
+        "https://github.com/openssl/openssl/commit/602542f2c0c2d5edb47128f93eac10b62aeeefb3",
+        "https://github.com/openssl/openssl/commit/a9d187dd1000130100fa7ab915f8513532cb3bb8",
+        "https://github.com/openssl/openssl/commit/d3a901e8d9f021f3e67d6cfbc12e768129862726"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-28389",
+      "vendor": "Check Point",
+      "product": "openssl",
+      "products": [
+        "openssl"
+      ],
+      "description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyAgreeRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is\nprocessed, the optional parameters field of KeyEncryptionAlgorithmIdentifier\nis examined without checking for its presence. This results in a NULL\npointer dereference if the field is missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-07T22:16:21.030",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "openssl",
+      "references": [
+        "https://github.com/openssl/openssl/commit/16cea4188e0ea567deb4f93f85902247e67384f5",
+        "https://github.com/openssl/openssl/commit/785cbf7ea3b5a6f5adf0c1ccb92b79d89c35c616",
+        "https://github.com/openssl/openssl/commit/7b5274e812400cacb6f3be4c2df5340923fa807f",
+        "https://github.com/openssl/openssl/commit/c6725634e089eb2b634b10ede33944be7248172a",
+        "https://github.com/openssl/openssl/commit/f80f83bc5fd036bc47d773e8b15a001e2b4ce686"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-28390",
+      "vendor": "Check Point",
+      "product": "openssl",
+      "products": [
+        "openssl"
+      ],
+      "description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyTransportRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyTransportRecipientInfo with\nRSA-OAEP encryption is processed, the optional parameters field of\nRSA-OAEP SourceFunc algorithm identifier is examined without checking\nfor its presence. This results in a NULL pointer dereference if the field\nis missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-07T22:16:21.190",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "openssl",
+      "references": [
+        "https://github.com/openssl/openssl/commit/01194a8f1941115cd0383bfa91c736dd3993c8bc",
+        "https://github.com/openssl/openssl/commit/2e39b7a6993be445fddb9fbce316fa756e0397b6",
+        "https://github.com/openssl/openssl/commit/af2a5fecd3e71a29e7568f9c1453dec5cebbaff4",
+        "https://github.com/openssl/openssl/commit/ea7b4ea4f9f853521ba34830cbcadc970d2e0788",
+        "https://github.com/openssl/openssl/commit/fd2f1a6cf53b9ceeca723a001aa4b825d7c7ee75"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-31415",
+      "vendor": "Check Point",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv6: avoid overflows in ip6_datagram_send_ctl()\n\nYiming Qian reported :\n<quote>\n I believe I found a locally triggerable kernel bug in the IPv6 sendmsg\n ancillary-data path that can panic the kernel via `skb_under_panic()`\n (local DoS).\n\n The core issue is a mismatch between:\n\n - a 16-bit length accumulator (`struct ipv6_txoptions::opt_flen`, type\n `__u16`) and\n - a pointer to the *last* provided destination-options header (`opt->dst1opt`)\n\n when multiple `IPV6_DSTOPTS` control messages (cmsgs) are provided.\n\n - `include/net/ipv6.h`:\n   - `struct ipv6_txoptions::opt_flen` is `__u16` (wrap possible).\n (lines 291-307, especially 298)\n - `net/ipv6/datagram.c:ip6_datagram_send_ctl()`:\n   - Accepts repeated `IPV6_DSTOPTS` and accumulates into `opt_flen`\n without rejecting duplicates. (lines 909-933)\n - `net/ipv6/ip6_output.c:__ip6_append_data()`:\n   - Uses `opt->opt_flen + opt->opt_nflen` to compute header\n sizes/headroom decisions. (lines 1448-1466, especially 1463-1465)\n - `net/ipv6/ip6_output.c:__ip6_make_skb()`:\n   - Calls `ipv6_push_frag_opts()` if `opt->opt_flen` is non-zero.\n (lines 1930-1934)\n - `net/ipv6/exthdrs.c:ipv6_push_frag_opts()` / `ipv6_push_exthdr()`:\n   - Push size comes from `ipv6_optlen(opt->dst1opt)` (based on the\n pointed-to header). (lines 1179-1185 and 1206-1211)\n\n 1. `opt_flen` is a 16-bit accumulator:\n\n - `include/net/ipv6.h:298` defines `__u16 opt_flen; /* after fragment hdr */`.\n\n 2. `ip6_datagram_send_ctl()` accepts *repeated* `IPV6_DSTOPTS` cmsgs\n and increments `opt_flen` each time:\n\n - In `net/ipv6/datagram.c:909-933`, for `IPV6_DSTOPTS`:\n   - It computes `len = ((hdr->hdrlen + 1) << 3);`\n   - It checks `CAP_NET_RAW` using `ns_capable(net->user_ns,\n CAP_NET_RAW)`. (line 922)\n   - Then it does:\n     - `opt->opt_flen += len;` (line 927)\n     - `opt->dst1opt = hdr;` (line 928)\n\n There is no duplicate rejection here (unlike the legacy\n `IPV6_2292DSTOPTS` path which rejects duplicates at\n `net/ipv6/datagram.c:901-904`).\n\n If enough large `IPV6_DSTOPTS` cmsgs are provided, `opt_flen` wraps\n while `dst1opt` still points to a large (2048-byte)\n destination-options header.\n\n In the attached PoC (`poc.c`):\n\n - 32 cmsgs with `hdrlen=255` => `len = (255+1)*8 = 2048`\n - 1 cmsg with `hdrlen=0` => `len = 8`\n - Total increment: `32*2048 + 8 = 65544`, so `(__u16)opt_flen == 8`\n - The last cmsg is 2048 bytes, so `dst1opt` points to a 2048-byte header.\n\n 3. The transmit path sizes headers using the wrapped `opt_flen`:\n\n- In `net/ipv6/ip6_output.c:1463-1465`:\n  - `headersize = sizeof(struct ipv6hdr) + (opt ? opt->opt_flen +\n opt->opt_nflen : 0) + ...;`\n\n With wrapped `opt_flen`, `headersize`/headroom decisions underestimate\n what will be pushed later.\n\n 4. When building the final skb, the actual push length comes from\n `dst1opt` and is not limited by wrapped `opt_flen`:\n\n - In `net/ipv6/ip6_output.c:1930-1934`:\n   - `if (opt->opt_flen) proto = ipv6_push_frag_opts(skb, opt, proto);`\n - In `net/ipv6/exthdrs.c:1206-1211`, `ipv6_push_frag_opts()` pushes\n `dst1opt` via `ipv6_push_exthdr()`.\n - In `net/ipv6/exthdrs.c:1179-1184`, `ipv6_push_exthdr()` does:\n   - `skb_push(skb, ipv6_optlen(opt));`\n   - `memcpy(h, opt, ipv6_optlen(opt));`\n\n With insufficient headroom, `skb_push()` underflows and triggers\n `skb_under_panic()` -> `BUG()`:\n\n - `net/core/skbuff.c:2669-2675` (`skb_push()` calls `skb_under_panic()`)\n - `net/core/skbuff.c:207-214` (`skb_panic()` ends in `BUG()`)\n\n - The `IPV6_DSTOPTS` cmsg path requires `CAP_NET_RAW` in the target\n netns user namespace (`ns_capable(net->user_ns, CAP_NET_RAW)`).\n - Root (or any task with `CAP_NET_RAW`) can trigger this without user\n namespaces.\n - An unprivileged `uid=1000` user can trigger this if unprivileged\n user namespaces are enabled and it can create a userns+netns to obtain\n namespaced `CAP_NET_RAW` (the attached PoC does this).\n\n - Local denial of service: kernel BUG/panic (system crash).\n -\n---truncated---",
+      "cvss_score": 5.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-13T14:16:10.707",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/0bdaf54d3aaddfe8df29371260fa8d4939b4fd6f",
+        "https://git.kernel.org/stable/c/2dbfb003bbf3fc0e94f07efefab0ebcf83029a2a",
+        "https://git.kernel.org/stable/c/4082f9984a694829153115d28c956a3534f52f29",
+        "https://git.kernel.org/stable/c/4e453375561fc60820e6b9d8ebeb6b3ee177d42e",
+        "https://git.kernel.org/stable/c/5e4ee5dbea134e9257f205e31a96040bed71e83f"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-71210",
+      "vendor": "Trend Micro",
+      "product": "apex one",
+      "products": [
+        "apex one"
+      ],
+      "description": "A vulnerability in the Trend Micro Apex One management console could allow a remote attacker to upload malicious code and execute commands on affected installations.\r\n\r\nPlease note: although this vulnerability carries a technical critical CVSS rating, this was reported via responsible disclosure via a researcher through the Zero Day Initiative. The SaaS versions of the product have already been mitigated and no customer action required.\r\n\r\nFor this particular vulnerability, an attacker must have access to the Trend Micro Apex One Management Console, so customers that have their console�s IP address exposed externally should consider mitigating factors such as source restrictions if not already applied.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-05-21T14:16:43.540",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "apex one",
+      "references": [
+        "https://success.trendmicro.com/en-US/solution/KA-0022458",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-136/"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-71211",
+      "vendor": "Trend Micro",
+      "product": "apex one",
+      "products": [
+        "apex one"
+      ],
+      "description": "A vulnerability in the Trend Micro Apex One management console could allow a remote attacker to upload malicious code and execute commands on affected installations. This vulnerability is similar in scope to CVE-2025-71210 but affects a different executable. \r\n\r\nPlease note: although this vulnerability carries a technical critical CVSS rating, this was reported via responsible disclosure via a researcher through the Zero Day Initiative. The SaaS versions of the product have already been mitigated and no customer action required.\r\n\r\nFor this particular vulnerability, an attacker must have access to the Trend Micro Apex One Management Console, so customers that have their console�s IP address exposed externally should consider mitigating factors such as source restrictions if not already applied.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-05-21T14:16:43.663",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "apex one",
+      "references": [
+        "https://success.trendmicro.com/en-US/solution/KA-0022458",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-137/"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-71212",
+      "vendor": "Trend Micro",
+      "product": "apex one",
+      "products": [
+        "apex one"
+      ],
+      "description": "A link following vulnerability in the Trend Micro Apex One scan engine could allow a local attacker to escalate privileges on affected installations.\r\n\r\nPlease note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-21T14:16:43.777",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "apex one",
+      "references": [
+        "https://success.trendmicro.com/en-US/solution/KA-0022458",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-138/"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-71213",
+      "vendor": "Trend Micro",
+      "product": "apex one",
+      "products": [
+        "apex one"
+      ],
+      "description": "An origin validation error vulnerability in Trend Micro Apex One could allow a local attacker to escalate privileges on affected installations.\r\n\r\nPlease note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-21T14:16:43.897",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "apex one",
+      "references": [
+        "https://success.trendmicro.com/en-US/solution/KA-0022458",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-140/"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-71214",
+      "vendor": "Trend Micro",
+      "product": "apex one",
+      "products": [
+        "apex one"
+      ],
+      "description": "An origin validation error vulnerability in the Trend Micro Apex One (mac) agent iCore service could allow a local attacker to escalate privileges on affected installations.\r\n\r\nPlease note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\r\n\r\nThe following information is provided as informational only for CVE references, as these were addressed already via ActiveUpdate/SaaS updates in mid to late 2025 (SaaS 2507 & 2005 Yearly Release).",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-21T14:16:44.017",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "apex one",
+      "references": [
+        "https://success.trendmicro.com/en-US/solution/KA-0022458",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-139/"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-71215",
+      "vendor": "Trend Micro",
+      "product": "apex one",
+      "products": [
+        "apex one"
+      ],
+      "description": "A time-of-check time-of-use vulnerability in the Trend Micro Apex One (mac) agent iCore service signature verification could allow a local attacker to escalate privileges on affected installations.\r\n\r\nPlease note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\r\n\r\nThe following information is provided as informational only for CVE references, as these were addressed already via ActiveUpdate/SaaS updates in mid to late 2025 (SaaS 2507 & 2005 Yearly Release).",
+      "cvss_score": 7.0,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-21T14:16:44.130",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "apex one",
+      "references": [
+        "https://success.trendmicro.com/en-US/solution/KA-0022458",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-141/"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-71216",
+      "vendor": "Trend Micro",
+      "product": "apex one",
+      "products": [
+        "apex one"
+      ],
+      "description": "A time-of-check time-of-use vulnerability in the Trend Micro Apex One (mac) agent cache mechanism could allow a local attacker to escalate privileges on affected installations.\r\n\r\nPlease note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\r\n\r\nThe following information is provided as informational only for CVE references, as these were addressed already via ActiveUpdate/SaaS updates in mid to late 2025 (SaaS 2507 & 2005 Yearly Release).",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-21T14:16:44.240",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "apex one",
+      "references": [
+        "https://success.trendmicro.com/en-US/solution/KA-0022458",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-142/"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2025-71217",
+      "vendor": "Trend Micro",
+      "product": "apex one",
+      "products": [
+        "apex one"
+      ],
+      "description": "An origin validation error vulnerability in the Trend Micro Apex One (mac) agent self-protection mechanism could allow a local attacker to escalate privileges on affected installations.\r\n\r\nPlease note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\r\n\r\nThe following information is provided as informational only for CVE references, as these were addressed already via ActiveUpdate/SaaS updates in mid to late 2025 (SaaS 2507 & 2005 Yearly Release).",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-21T14:16:44.350",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "apex one",
+      "references": [
+        "https://success.trendmicro.com/en-US/solution/KA-0022458",
+        "https://www.zerodayinitiative.com/advisories/ZDI-26-143/"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-45930",
+      "vendor": "Trend Micro",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: mctp: ensure our nlmsg responses are initialised\n\nSyed Faraz Abrar (@farazsth98) from Zellic, and Pumpkin (@u1f383) from\nDEVCORE Research Team working with Trend Micro Zero Day Initiative\nreport that a RTM_GETNEIGH will return uninitalised data in the pad\nbytes of the ndmsg data.\n\nEnsure we're initialising the netlink data to zero, in the link, addr\nand neigh response messages.",
+      "cvss_score": 5.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-05-27T14:17:08.947",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/54ed418de62a148a655262da682a050fa05f7924",
+        "https://git.kernel.org/stable/c/6fb6a97c86abb8592158088afaea0eb464cf9de1",
+        "https://git.kernel.org/stable/c/963537a26fd892f7e414a091f807b44aeee97a7d",
+        "https://git.kernel.org/stable/c/976612471a9e6ead6ceffc241e4d0a1aac90b36a",
+        "https://git.kernel.org/stable/c/a6a9bc544b675d8b5180f2718ec985ad267b5cbf"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-6423",
+      "vendor": "ESET",
+      "product": "ESET",
+      "products": [
+        "ESET"
+      ],
+      "description": "A local privilege escalation vulnerability in ESET Inspect Connector. \nThe vulnerability was caused by improper authentication in an IPC channel.",
+      "cvss_score": 0.0,
+      "severity": "UNSCORED",
+      "unscored": true,
+      "published_date": "2026-07-16T09:16:19.273",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://support.eset.com/en/ca8970-eset-customer-advisory-local-privilege-escalation-via-unauthenticated-alpc-in-eset-inspect-connector-for-windows-fixed"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-6424",
+      "vendor": "ESET",
+      "product": "ESET",
+      "products": [
+        "ESET"
+      ],
+      "description": "Use-after-free vulnerability in ESET Linux products potentially allowed an attacker to trigger kernel panic on the system",
+      "cvss_score": 0.0,
+      "severity": "UNSCORED",
+      "unscored": true,
+      "published_date": "2026-07-16T09:16:19.403",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://support.eset.com/en/ca8972-eset-customer-advisory-use-after-free-vulnerability-in-eset-security-products-for-linux-fixed"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-60596",
+      "vendor": "ESET",
+      "product": "ESET",
+      "products": [
+        "ESET"
+      ],
+      "description": "Vulnerability in the PeopleSoft Enterprise FIN eSettlements product of Oracle PeopleSoft (component: eSettlements).   The supported version that is affected is 9.2. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where PeopleSoft Enterprise FIN eSettlements executes to compromise PeopleSoft Enterprise FIN eSettlements.  Successful attacks of this vulnerability can result in  unauthorized read access to a subset of PeopleSoft Enterprise FIN eSettlements accessible data. CVSS 3.1 Base Score 2.3 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N).",
+      "cvss_score": 2.3,
+      "severity": "LOW",
+      "unscored": false,
+      "published_date": "2026-07-21T22:17:59.727",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://www.oracle.com/security-alerts/cpujul2026.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-61057",
+      "vendor": "ESET",
+      "product": "ESET",
+      "products": [
+        "ESET"
+      ],
+      "description": "Vulnerability in the PeopleSoft Enterprise FIN eSettlements product of Oracle PeopleSoft (component: eSettlements).   The supported version that is affected is 9.2. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise FIN eSettlements.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of PeopleSoft Enterprise FIN eSettlements accessible data as well as  unauthorized read access to a subset of PeopleSoft Enterprise FIN eSettlements accessible data. CVSS 3.1 Base Score 4.8 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N).",
+      "cvss_score": 4.8,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-07-21T22:18:36.517",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://www.oracle.com/security-alerts/cpujul2026.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-61240",
+      "vendor": "ESET",
+      "product": "ESET",
+      "products": [
+        "ESET"
+      ],
+      "description": "Vulnerability in the PeopleSoft Enterprise FIN Common Objects Argentina product of Oracle PeopleSoft (component: eSettlements).   The supported version that is affected is 9.1. Easily exploitable vulnerability allows unauthenticated attacker with access to the physical communication segment attached to the hardware where the PeopleSoft Enterprise FIN Common Objects Argentina executes to compromise PeopleSoft Enterprise FIN Common Objects Argentina.  While the vulnerability is in PeopleSoft Enterprise FIN Common Objects Argentina, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all PeopleSoft Enterprise FIN Common Objects Argentina accessible data as well as  unauthorized update, insert or delete access to some of PeopleSoft Enterprise FIN Common Objects Argentina accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N).",
+      "cvss_score": 8.2,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-21T22:18:54.907",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://www.oracle.com/security-alerts/cpujul2026.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-10046",
+      "vendor": "Bitdefender",
+      "product": "napoca",
+      "products": [
+        "napoca"
+      ],
+      "description": "Bitdefender Napoca bare-metal hypervisor contains an out-of-bounds write vulnerability in the BIOS INT 0x15 / E820 memory map handler, implemented in napoca/guests/bios_handlers.c. The handler computes a destination offset into the guest RealModeMemory buffer from guest-controlled ES and EDI register values without validating that the resulting address remains within the 1MB RealModeMemory allocation. A malicious guest operating in real mode can trigger the issue by invoking INT 0x15 with AX=0xE820, EDX=0x534D4150, ECX greater than or equal to 20, EBX=0, ES=0xFFFF, and EDI=0xFFFF. This can cause a write of up to 20 bytes past the end of the RealModeMemory buffer into the hypervisor heap. The product is end-of-life and unsupported when assigned.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-06-02T16:16:31.583",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "napoca",
+      "references": [
+        "https://www.bitdefender.com/consumer/support/security-advisories/out-of-bounds-write-in-napoca-bios-int-0x15-e820-memory-map-handler-va-13905"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-10047",
+      "vendor": "Bitdefender",
+      "product": "napoca",
+      "products": [
+        "napoca"
+      ],
+      "description": "The Bitdefender Napoca bare-metal hypervisor contains an out-of-bounds write vulnerability in the real-mode hook handler, implemented in napoca/kernel/handler.c. The handler uses a guest-controlled SS:SP-derived offset as an index into the 1MB RealModeMemory buffer without bounds validation. With SS=0xFFFF and ESP=0xFFFF, the computed offset can reach 0x10FFEF, exceeding the RealModeMemory buffer by 65,519 bytes. The IRET frame push can therefore write past the end of the buffer into the hypervisor heap. The product is end-of-life and unsupported when assigned.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-06-02T16:16:31.747",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "napoca",
+      "references": [
+        "https://www.bitdefender.com/support/security-advisories/out-of-bounds-write-in-napoca-real-mode-hook-handler-via-guest-controlled-sssp-va-13905"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-6851",
+      "vendor": "Bitdefender",
+      "product": "Bitdefender",
+      "products": [
+        "Bitdefender"
+      ],
+      "description": "An Improper link resolution before file access ('link following') vulnerability in the File Shredder module as used in Bitdefender Total Security and Internet Security on Windows allows a less-privileged local user to elevate rights by leveraging a race conditions via Symbolic Links.\n\nThis issue affects Total Security: before 27.0.58.315; Internet Security: before 27.0.58.315.",
+      "cvss_score": 0.0,
+      "severity": "UNSCORED",
+      "unscored": true,
+      "published_date": "2026-07-14T08:16:24.000",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://www.bitdefender.com/support/security-advisories/improper-link-resolution-before-file-access-via-link-following-va-13681"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-43284",
+      "vendor": "Fortinet",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfrm: esp: avoid in-place decrypt on shared skb frags\n\nMSG_SPLICE_PAGES can attach pages from a pipe directly to an skb. TCP\nmarks such skbs with SKBFL_SHARED_FRAG after skb_splice_from_iter(),\nso later paths that may modify packet data can first make a private\ncopy. The IPv4/IPv6 datagram append paths did not set this flag when\nsplicing pages into UDP skbs.\n\nThat leaves an ESP-in-UDP packet made from shared pipe pages looking\nlike an ordinary uncloned nonlinear skb. ESP input then takes the no-COW\nfast path for uncloned skbs without a frag_list and decrypts in place\nover data that is not owned privately by the skb.\n\nMark IPv4/IPv6 datagram splice frags with SKBFL_SHARED_FRAG, matching\nTCP. Also make ESP input fall back to skb_cow_data() when the flag is\npresent, so ESP does not decrypt externally backed frags in place.\nPrivate nonlinear skb frags still use the existing fast path.\n\nThis intentionally does not change ESP output. In esp_output_head(),\nthe path that appends the ESP trailer to existing skb tailroom without\ncalling skb_cow_data() is not reachable for nonlinear skbs:\nskb_tailroom() returns zero when skb->data_len is nonzero, while ESP\ntailen is positive. Thus ESP output will either use the separate\ndestination-frag path or fall back to skb_cow_data().",
+      "cvss_score": 8.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-08T08:16:43.827",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/50ed1e7873100f77abad20fd31c51029bc49cd03",
+        "https://git.kernel.org/stable/c/52646cbd00e765a6db9c3afe9535f26218276034",
+        "https://git.kernel.org/stable/c/5d55c7336f8032d434adcc5fab987ccc93a44aec",
+        "https://git.kernel.org/stable/c/71a1d9d985d26716f74d21f18ee8cac821b06e97",
+        "https://git.kernel.org/stable/c/8253aab4659ca16116b522203c2a6b18dccacea7"
+      ],
+      "source": "NVD + Fortinet PSIRT"
+    },
+    {
+      "id": "CVE-2026-43500",
+      "vendor": "Fortinet",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nrxrpc: Also unshare DATA/RESPONSE packets when paged frags are present\n\nThe DATA-packet handler in rxrpc_input_call_event() and the RESPONSE\nhandler in rxrpc_verify_response() copy the skb to a linear one before\ncalling into the security ops only when skb_cloned() is true.  An skb\nthat is not cloned but still carries externally-owned paged fragments\n(e.g. SKBFL_SHARED_FRAG set by splice() into a UDP socket via\n__ip_append_data, or a chained skb_has_frag_list()) falls through to\nthe in-place decryption path, which binds the frag pages directly into\nthe AEAD/skcipher SGL via skb_to_sgvec().\n\nExtend the gate to also unshare when skb_has_frag_list() or\nskb_has_shared_frag() is true.  This catches the splice-loopback vector\nand other externally-shared frag sources while preserving the\nzero-copy fast path for skbs whose frags are kernel-private (e.g. NIC\npage_pool RX, GRO).  The OOM/trace handling already in place is reused.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-05-11T08:16:16.077",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/3711382a77342a9a1c3d2e7330dcfc7ea927f568",
+        "https://git.kernel.org/stable/c/3eae0f4f9f7206a4801efa5e0235c25bbd5a412c",
+        "https://git.kernel.org/stable/c/7c504ffab3efce8f7e4f463b314ae31030bdf18b",
+        "https://git.kernel.org/stable/c/aa54b1d27fe0c2b78e664a34fd0fdf7cd1960d71",
+        "https://git.kernel.org/stable/c/d45179f8795222ce858770dc619abe51f9d24411"
+      ],
+      "source": "NVD + Fortinet PSIRT"
+    },
+    {
+      "id": "CVE-2025-26466",
+      "vendor": "Fortinet",
+      "product": "debian linux",
+      "products": [
+        "debian linux",
+        "openssh",
+        "ubuntu linux"
+      ],
+      "description": "A flaw was found in the OpenSSH package. For each ping packet the SSH server receives, a pong packet is allocated in a memory buffer and stored in a queue of packages. It is only freed when the server/client key exchange has finished. A malicious client may keep sending such packages, leading to an uncontrolled increase in memory consumption on the server side. Consequently, the server may become unavailable, resulting in a denial of service attack.",
+      "cvss_score": 5.9,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2025-02-28T22:15:40.080",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "debian linux, openssh, ubuntu linux",
+      "references": [
+        "https://access.redhat.com/security/cve/CVE-2025-26466",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=2345043",
+        "https://seclists.org/oss-sec/2025/q1/144",
+        "https://www.qualys.com/2025/02/18/openssh-mitm-dos.txt",
+        "http://seclists.org/fulldisclosure/2025/Feb/18"
+      ],
+      "source": "NVD + Fortinet PSIRT"
+    },
+    {
+      "id": "CVE-2026-0284",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os"
+      ],
+      "description": "An XML injection vulnerability in the Large Scale VPN (LSVPN) functionality of Palo Alto Networks PAN-OS® software enables an unauthenticated attacker with network access to inject malicious XML content, potentially leading to information disclosure or corruption of internal LSVPN satellite data.\n\nPanorama, Cloud NGFW, and Prisma® Access are not impacted by this vulnerability.",
+      "cvss_score": 9.9,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-07-09T19:17:01.140",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0284"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0288",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os"
+      ],
+      "description": "Multiple buffer overflow vulnerabilities in the User-ID Terminal Server Agent (TSA) component of Palo Alto Networks PAN-OS software allow an unauthenticated attacker with network access to cause a denial of service (DoS) condition or potentially execute arbitrary code by sending specially crafted network traffic.\n\nThe security risk posed by this issue is minimized when the User-ID Terminal Server Agent connectivity is restricted to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://docs.paloaltonetworks.com/ngfw/help/10-2/user-identification/device-user-identification-terminal-services-agents#:~:text=To%20minimize%20security%20risk%2C%20restrict%20TS%20Agent%20connectivity%20to%20trusted%20internal%20IP%20addresses%20only. .\n\nPanorama is not impacted by this vulnerability.",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-08T21:16:45.590",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os",
+      "references": [
+        "https://security.paloaltonetworks.com/"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0277",
+      "vendor": "Palo Alto Networks",
+      "product": "iphone os",
+      "products": [
+        "iphone os",
+        "prisma access agent"
+      ],
+      "description": "An improper certificate validation vulnerability in the Prisma® Access Agent for iOS enables an attacker to perform a man-in-the-middle (MitM) attack to intercept VPN traffic. \n\nThe Prisma Access Agent on Windows, macOS, Linux, Android and ChromeOS are not affected.",
+      "cvss_score": 5.9,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-07-09T20:16:24.840",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "iphone os, prisma access agent",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0277"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0276",
+      "vendor": "Palo Alto Networks",
+      "product": "cortex xdr broker vm",
+      "products": [
+        "cortex xdr broker vm"
+      ],
+      "description": "A privilege escalation vulnerability in Palo Alto Networks Cortex® XDR Broker VM enables a locally authenticated user to perform actions as the root user.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-09T20:16:24.670",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "cortex xdr broker vm",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0276"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0272",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os"
+      ],
+      "description": "A privilege escalation vulnerability in Palo Alto Networks PAN-OS® software allows an authenticated administrator with access to the Command Line Interface (CLI) to perform actions on the device with root privileges.\n\n\n\nThe security risk posed by this issue is significantly minimized when CLI access is restricted to a limited group of administrators and by restricting access to the management interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\n\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\nCloud NGFW, and Prisma® Access are not impacted by this vulnerability.",
+      "cvss_score": 7.2,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-06-10T22:16:54.270",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0272",
+        "https://cert-portal.siemens.com/productcert/html/ssa-104023.html"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0278",
+      "vendor": "Palo Alto Networks",
+      "product": "prisma access agent",
+      "products": [
+        "prisma access agent",
+        "windows"
+      ],
+      "description": "Multiple protection mechanism failures in the Prisma Access Agent Data Loss Prevention (DLP) component for Windows allow a local user to bypass DLP policy enforcement controls.\n\n\n\nThe Prisma Access Agent on macOS is not affected.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-09T20:16:24.983",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "prisma access agent, windows",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0278"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0282",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os"
+      ],
+      "description": "A file deletion vulnerability in Palo Alto Networks PAN-OS® software enables an unauthenticated attacker with network access to the management web interface to delete files from a temporary directory.\n\nThe security risk posed by this issue is minimized by restricting access to the management web interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\nCloud NGFW and Prisma® Access are not impacted by this vulnerability.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-07-09T19:17:00.110",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0282"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0285",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os"
+      ],
+      "description": "A server-side request forgery (SSRF) vulnerability in Palo Alto Networks PAN-OS software enables an authenticated administrator with network access to the management web interface to make unauthorized requests from the firewall to internal services.\n\n\n\nThe security risk posed by this issue is minimized when the management interface is restricted to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 . \n\nPanorama, Cloud NGFW, and Prisma® Access are not impacted by this vulnerability.",
+      "cvss_score": 4.9,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-07-09T19:17:01.633",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0285"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0280",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os"
+      ],
+      "description": "An IPv6 packet processing vulnerability in the dataplane of Palo Alto Networks PAN-OS® software enables an unauthenticated attacker to bypass firewall security policy enforcement, allowing network traffic that should be blocked to reach protected services.\n\nCloud NGFW and Panorama are not impacted by this vulnerability.",
+      "cvss_score": 7.2,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-09T19:16:59.280",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0280"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0287",
+      "vendor": "Palo Alto Networks",
+      "product": "cloud ngfw",
+      "products": [
+        "cloud ngfw",
+        "pan-os"
+      ],
+      "description": "Multiple denial of service vulnerabilities in Palo Alto Networks PAN-OS® software allow an unauthenticated attacker with network access to cause a denial of service (DoS) condition by sending specially crafted network traffic to or through a dataplane interface. Repeated attempts to trigger this condition result in the firewall entering maintenance mode.\n\nPanorama is not impacted by these vulnerabilities.",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-09T19:17:02.747",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "cloud ngfw, pan-os",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0287"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0279",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os"
+      ],
+      "description": "Multiple cross site scripting vulnerabilities in the User-ID™ Authentication Portal (aka Captive Portal) service, GlobalProtect™ gateway/portal features and Clientless VPN of Palo Alto Networks PAN-OS® software enables a malicious unauthenticated user to store or execute malicious JavaScript payload.\n\n\nThe security risk posed by this issue is minimized when the management interface and access to the User-ID™ Authentication Portal is restricted to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\nCloud NGFW is not affected by this vulnerability.",
+      "cvss_score": 6.1,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-07-09T19:16:58.717",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0279"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0271",
+      "vendor": "Palo Alto Networks",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel",
+        "prisma access agent"
+      ],
+      "description": "A privilege escalation (PE) vulnerability in the Palo Alto Networks Prisma Access Agent app on Linux devices enables a local user to execute code with elevated privileges.\n\n\n\nThis does not impact Prisma Access Agent on Windows, macOS, iOS, Android, or ChromeOS.",
+      "cvss_score": 7.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-06-10T22:16:54.110",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "linux kernel, prisma access agent",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0271"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0281",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os"
+      ],
+      "description": "An information disclosure vulnerability in Palo Alto Networks PAN-OS® software enables an unauthenticated attacker with network access to the management web interface to obtain web session tokens. This requires a legitimate user to first click on a malicious link provided by the attacker.\n\nThe security risk posed by this issue is minimized by restricting access to the management web interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\nCloud NGFW and Prisma® Access are not impacted by this vulnerability.",
+      "cvss_score": 7.1,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-09T19:16:59.780",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0281"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0270",
+      "vendor": "Palo Alto Networks",
+      "product": "cortex xsoar",
+      "products": [
+        "cortex xsoar",
+        "linux kernel"
+      ],
+      "description": "A path traversal vulnerability in Palo Alto Networks Cortex XSOAR engine software running on Linux  allows an unauthenticated attacker on an adjacent network, with the ability to intercept and manipulate network response traffic via a man-in-the-middle (MITM) attack, to write arbitrary files to the host.",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-06-10T22:16:53.953",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "cortex xsoar, linux kernel",
+      "references": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2007-4559",
+        "https://security.paloaltonetworks.com/CVE-2026-0270"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0283",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os"
+      ],
+      "description": "An authentication bypass vulnerability in Large Scale VPN ( LSVPN) functionality of Palo Alto Networks PAN-OS software allows an attacker with network access to bypass security restrictions and establish an unauthorized site-to-site VPN connection.\n\nPanorama, Cloud NGFW, and Prisma® Access are not impacted by this vulnerability.",
+      "cvss_score": 7.2,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-09T19:17:00.593",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0283"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0286",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os"
+      ],
+      "description": "A command injection vulnerability in the management plane of Palo Alto Networks PAN-OS® software enables an authenticated administrator to execute arbitrary OS commands as root.\n\n\n\nThe security risk posed by this issue is significantly minimized when CLI access is restricted to a limited group of administrators.\n\n\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\n\n\nCloud NGFW and Prisma Access®  are not impacted by this vulnerability.",
+      "cvss_score": 7.2,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-07-09T19:17:02.227",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0286"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0273",
+      "vendor": "Palo Alto Networks",
+      "product": "pan-os",
+      "products": [
+        "pan-os"
+      ],
+      "description": "A command injection vulnerability in Palo Alto Networks PAN-OS® software enables an authenticated administrator to bypass system restrictions and run arbitrary commands as a root user. To be able to exploit this issue, the user must have access to the PAN-OS CLI or Web UI.\n\nThe security risk posed by this issue is significantly minimized when CLI access is restricted to a limited group of administrators and by restricting access to the management web interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-tricks-how-to-secure-the-management-access-of-your-palo/ba-p/464431 .\n\nThis issue is applicable to PAN-OS software on PA-Series and VM-Series firewalls and on Panorama (virtual and M-Series).\n\nCloud NGFW and Prisma® Access are not affected by this vulnerability.",
+      "cvss_score": 7.2,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-06-10T22:16:54.730",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "pan-os",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0273",
+        "https://cert-portal.siemens.com/productcert/html/ssa-104023.html"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    }
+  ]
+}

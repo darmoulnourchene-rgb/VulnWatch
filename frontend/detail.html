@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VulnWatch — Détail CVE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5l-8-3z" stroke="#0E9C82" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="#0E9C82" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>VulnWatch</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-item">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="9" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="3" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="12" width="7" height="9" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="16" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.6"/></svg>
+        Dashboard
+      </a>
+    </nav>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <div class="search-box">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input type="text" id="searchInput" placeholder="Rechercher…" />
+      </div>
+    </div>
+
+    <div class="content" id="content">
+      <div id="cveDetail" style="max-width:900px;margin:0 auto;">
+        <div class="card" style="padding:24px;">
+          <div id="detailContent">
+            <div style="text-align:center;padding:40px;color:var(--text-faint);">
+              <div class="spinner"></div>
+              Chargement...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/api_fast.js?v=2"></script>
+<script>
+const SEVERITY = {
+  critical: { color: "#D8323F", label: "Critique" },
+  high: { color: "#DB8A2A", label: "Élevée" },
+  medium: { color: "#C89A15", label: "Moyenne" },
+  low: { color: "#2E7CD6", label: "Faible" },
+  unscored: { color: "#8A93A0", label: "Non évaluée" },
+};
+
+function ringSVG(score, severity, size = 54, strokeW = 4, unscored = false) {
+  const r = (size - strokeW * 2) / 2;
+  const c = 2 * Math.PI * r;
+  const pct = unscored ? 0 : Math.min((score || 0) / 10, 1);
+  const color = (SEVERITY[severity] || SEVERITY.unscored).color;
+  const label = unscored ? "N/A" : (score || 0).toFixed(1);
+  return `
+    <div class="ring" style="width:${size}px;height:${size}px;">
+      <svg width="${size}" height="${size}">
+        <circle cx="${size/2}" cy="${size/2}" r="${r}" stroke="#E1E4E9" stroke-width="${strokeW}" fill="none" />
+        <circle cx="${size/2}" cy="${size/2}" r="${r}" stroke="${color}" stroke-width="${strokeW}" fill="none"
+          stroke-dasharray="${c}" stroke-dashoffset="${c * (1 - pct)}" stroke-linecap="round" />
+      </svg>
+      <span class="ring-score" style="font-size:${unscored ? size*0.22 : size*0.3}px;color:${color};">${label}</span>
+    </div>`;
+}
+
+function badgeHTML(severity) {
+  const s = SEVERITY[severity] || SEVERITY.unscored;
+  return `<span class="badge" style="color:${s.color};background:${s.color}1A;border:1px solid ${s.color}40;font-size:13px;padding:6px 14px;">
+    <span class="badge-dot" style="background:${s.color};"></span>${s.label}
+  </span>`;
+}
+
+function kevBadgeHTML() {
+  return `<span class="badge kev-badge" style="font-size:13px;padding:6px 14px;">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+      <path d="M12 9v4M12 17h.01M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Exploitée activement (CISA KEV)
+  </span>`;
+}
+
+function patchIcon(available) {
+  return available
+    ? `<svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="9" stroke="#0E9C82" stroke-width="1.8"/>
+        <path d="M8 12l3 3 5-6" stroke="#0E9C82" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>`
+    : `<svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="9" stroke="#8A93A0" stroke-width="1.8"/>
+      </svg>`;
+}
+
+async function loadDetail() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const cveId = urlParams.get('id');
+  
+  if (!cveId) {
+    document.getElementById('detailContent').innerHTML = `
+      <div style="text-align:center;padding:40px;color:var(--text-faint);">
+        <div style="font-size:48px;margin-bottom:16px;">🔍</div>
+        <h3>Aucun ID CVE spécifié</h3>
+        <p>Retournez au <a href="index.html" style="color:var(--accent);">dashboard</a></p>
+      </div>
+    `;
+    return;
+  }
+
+  try {
+    const cve = await fetchCveDetail(cveId);
+    if (!cve) {
+      document.getElementById('detailContent').innerHTML = `
+        <div style="text-align:center;padding:40px;color:var(--text-faint);">
+          <div style="font-size:48px;margin-bottom:16px;">❌</div>
+          <h3>Vulnérabilité non trouvée</h3>
+          <p>L'ID <strong>${cveId}</strong> n'existe pas dans la base.</p>
+          <p><a href="index.html" style="color:var(--accent);">← Retour au dashboard</a></p>
+        </div>
+      `;
+      return;
+    }
+
+    document.getElementById('detailContent').innerHTML = `
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;">
+        <div>
+          <div style="font-family:var(--font-data);font-size:24px;font-weight:700;">${cve.id}</div>
+          <div style="font-size:14px;color:var(--text-dim);margin-top:4px;">${cve.vendor} — ${cve.product}</div>
+        </div>
+        <a href="index.html" style="color:var(--accent);text-decoration:none;font-size:14px;">← Retour</a>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:20px;margin:20px 0;padding:16px;background:var(--bg);border-radius:12px;border:1px solid var(--border);">
+        ${ringSVG(cve.score, cve.severity, 54, 4, cve.unscored)}
+        <div>
+          ${badgeHTML(cve.severity)}
+          <div style="font-size:13px;color:var(--text-faint);margin-top:4px;">${cve.unscored ? "Pas encore évalué par NVD" : "Score CVSS " + cve.score.toFixed(1) + "/10"}</div>
+        </div>
+        ${cve.kev ? `<div style="margin-left:auto;">${kevBadgeHTML()}</div>` : ''}
+      </div>
+
+      ${cve.kev ? `<div class="kev-alert" style="margin-bottom:20px;">${kevBadgeHTML()}<span style="margin-left:10px;">Cette vulnérabilité est activement exploitée dans la nature — priorité de traitement élevée.</span></div>` : ''}
+
+      <div style="margin:20px 0;">
+        <div style="font-size:12px;font-weight:600;text-transform:uppercase;color:var(--text-faint);letter-spacing:0.05em;margin-bottom:8px;">Description</div>
+        <div style="font-size:15px;line-height:1.6;color:var(--text);">${cve.description}</div>
+      </div>
+
+      <div style="margin:20px 0;">
+        <div style="font-size:12px;font-weight:600;text-transform:uppercase;color:var(--text-faint);letter-spacing:0.05em;margin-bottom:8px;">Produits affectés</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          ${(cve.products_affected && cve.products_affected.length > 0 ? cve.products_affected : [cve.product || 'Non spécifié']).map(p => `
+            <span style="font-size:12px;padding:4px 10px;border-radius:6px;background:var(--bg);border:1px solid var(--border);font-family:var(--font-data);">${p}</span>
+          `).join('')}
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0;">
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 16px;">
+          <div style="font-size:11px;color:var(--text-faint);">Versions affectées</div>
+          <div style="font-family:var(--font-data);font-size:14px;margin-top:4px;">${cve.versions || 'Non spécifiée'}</div>
+        </div>
+        <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 16px;">
+          <div style="font-size:11px;color:var(--text-faint);">Date de publication</div>
+          <div style="font-size:14px;margin-top:4px;">${cve.published ? new Date(cve.published).toLocaleDateString('fr-FR', { year:'numeric', month:'long', day:'numeric' }) : 'Inconnue'}</div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--bg);border:1px solid var(--border);border-radius:8px;margin:20px 0;">
+        ${patchIcon(cve.patch_available)}
+        <span style="font-size:14px;font-weight:500;">${cve.patch_available ? '✅ Correctif disponible' : '❌ Aucun correctif publié'}</span>
+      </div>
+
+      <div style="margin-top:20px;">
+        <div style="font-size:12px;font-weight:600;text-transform:uppercase;color:var(--text-faint);letter-spacing:0.05em;margin-bottom:8px;">Références</div>
+        <a href="${cve.source_url}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;color:var(--accent);text-decoration:none;font-size:14px;padding:8px 16px;background:var(--bg);border:1px solid var(--border);border-radius:8px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Voir le bulletin officiel
+        </a>
+      </div>
+    `;
+  } catch (error) {
+    console.error('Erreur:', error);
+    document.getElementById('detailContent').innerHTML = `
+      <div style="text-align:center;padding:40px;color:var(--text-faint);">
+        <div style="font-size:48px;margin-bottom:16px;">⚠️</div>
+        <h3>Erreur de chargement</h3>
+        <p>Impossible de charger les détails de la CVE.</p>
+        <p><a href="index.html" style="color:var(--accent);">← Retour au dashboard</a></p>
+      </div>
+    `;
+  }
+}
+
+document.getElementById('searchInput').addEventListener('input', (e) => {
+  const query = e.target.value.toLowerCase();
+  if (query.length > 2) {
+    window.location.href = `index.html?search=${encodeURIComponent(query)}`;
+  }
+});
+
+loadDetail();
+</script>
+</body>
+</html>

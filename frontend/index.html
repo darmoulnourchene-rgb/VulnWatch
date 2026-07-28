@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VulnWatch — Veille des vulnérabilités</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ========== SIDEBAR ========== -->
+  <aside class="sidebar">
+    <div class="brand">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2L4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5l-8-3z" stroke="#0E9C82" stroke-width="1.6"/>
+        <path d="M9 12l2 2 4-4" stroke="#0E9C82" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>VulnWatch</span>
+    </div>
+
+    <nav class="nav">
+      <button class="nav-item active" data-view="dashboard">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="3" width="7" height="9" rx="1.5" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="14" y="3" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="14" y="12" width="7" height="9" rx="1.5" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="3" y="16" width="7" height="5" rx="1.5" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+        Dashboard
+      </button>
+      <button class="nav-item" data-view="list">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none">
+          <path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        Vulnérabilités
+      </button>
+    </nav>
+
+    <div class="sidebar-label">Sources surveillées</div>
+    <div class="vendor-tags" id="vendorTags"></div>
+
+    <!-- ✅ "Paramètres" supprimé, remplacé par "Version 1.0" -->
+    <div class="sidebar-footer">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l-.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06A1.65 1.65 0 0019.32 9c.14.36.4.68.72.9" stroke="currentColor" stroke-width="1.4"/>
+      </svg>
+      <span>Version 1.0</span>
+    </div>
+  </aside>
+
+  <!-- ========== MAIN ========== -->
+  <div class="main">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="search-box">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
+          <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Rechercher par CVE, produit, éditeur…" />
+      </div>
+      <div class="sync-status">
+        <button id="alertBell" style="background:none;border:none;color:var(--text-dim);cursor:pointer;font-size:16px;position:relative;padding:4px;" title="Alertes">
+          🔔<span id="alertBellBadge" style="display:none;"></span>
+        </button>
+        <span class="pulse-dot"></span>
+        Dernière synchro&nbsp;: <span id="lastSyncText">—</span>
+        <button id="refreshBtn" style="background:none;border:none;color:var(--accent);cursor:pointer;font-size:16px;margin-left:6px;" title="Rafraîchir les données">
+          ↻
+        </button>
+      </div>
+    </div>
+
+    <div id="alertsPanel" style="display:none;position:absolute;top:56px;right:20px;width:360px;max-height:420px;overflow-y:auto;background:var(--surface);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow-drawer);z-index:60;">
+      <div style="padding:12px 16px;border-bottom:1px solid var(--border);font-weight:600;font-size:13px;display:flex;justify-content:space-between;align-items:center;">
+        <span>Alertes</span>
+        <button id="markAllReadBtn" style="background:none;border:none;color:var(--accent);font-size:11px;cursor:pointer;">Tout marquer comme lu</button>
+      </div>
+      <div id="alertsListPanel"></div>
+    </div>
+
+    <div class="content" id="content">
+
+      <!-- ========== DASHBOARD VIEW ========== -->
+      <section id="view-dashboard" class="view">
+
+        <!-- KPI Cards -->
+        <div class="kpi-grid" id="kpiGrid"></div>
+
+        <!-- Charts Row 1 -->
+        <div class="charts-row">
+          <div class="card chart-card-wide">
+            <div class="card-title">📈 ÉVOLUTION — 14 DERNIERS JOURS</div>
+            <canvas id="timelineChart" height="90"></canvas>
+          </div>
+          <div class="card">
+            <div class="card-title">🎯 RÉPARTITION PAR CRITICITÉ</div>
+            <canvas id="severityChart" height="140"></canvas>
+            <div class="legend" id="severityLegend"></div>
+          </div>
+        </div>
+
+        <!-- Charts Row 2 -->
+        <div class="charts-row">
+          <div class="card chart-card-wide">
+            <div class="card-title">🏢 RÉPARTITION PAR ÉDITEUR</div>
+            <canvas id="vendorChart" height="110"></canvas>
+          </div>
+          <div class="card">
+            <div class="card-title">🔥 CRITIQUES RÉCENTES</div>
+            <div class="critical-list" id="criticalList"></div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ========== LIST VIEW ========== -->
+      <section id="view-list" class="view" style="display:none;">
+
+        <!-- Filters -->
+        <div class="filters-row">
+          <div class="chip-group" id="severityChips"></div>
+          <button class="chip kev-toggle" id="kevToggle">⚠ Exploitées activement (KEV)</button>
+          
+          <select id="vendorFilter" class="vendor-select">
+            <option value="all">Tous les éditeurs</option>
+          </select>
+          
+          <select id="productFilter" class="vendor-select">
+            <option value="all">Tous les produits</option>
+          </select>
+          
+          <div style="display:flex;align-items:center;gap:6px;margin-left:8px;">
+            <input type="number" id="minScore" placeholder="Score min" style="width:70px;padding:5px;border-radius:5px;border:1px solid var(--border);background:var(--surface);color:var(--text);">
+            <span style="color:var(--text-faint);">-</span>
+            <input type="number" id="maxScore" placeholder="Score max" style="width:70px;padding:5px;border-radius:5px;border:1px solid var(--border);background:var(--surface);color:var(--text);">
+          </div>
+          
+          <div style="margin-left:auto;display:flex;gap:6px;">
+            <button class="chip" id="exportBtn" style="background:var(--accent);color:#FFFFFF;border-color:var(--accent);">
+              📊 CSV
+            </button>
+            <button class="chip" id="exportPDFBtn" style="background:#2E7CD6;color:#FFFFFF;border-color:#2E7CD6;">
+              📄 PDF
+            </button>
+          </div>
+        </div>
+
+        <div class="result-count" id="resultCount"></div>
+
+        <!-- Table -->
+        <div class="table" id="vulnTable"></div>
+
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<!-- ========== DETAIL DRAWER ========== -->
+<div class="overlay" id="overlay">
+  <div class="drawer" id="drawer" onclick="event.stopPropagation()"></div>
+</div>
+
+<!-- ========== SCRIPTS ========== -->
+<script src="js/api_fast.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
