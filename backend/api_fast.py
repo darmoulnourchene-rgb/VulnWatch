@@ -1,9 +1,3 @@
-"""
-api_fast.py
-===========
-API FastAPI pour VulnWatch — version complète avec export PDF
-"""
-
 import csv
 import io
 import json
@@ -45,16 +39,12 @@ def on_startup():
     print("✅ Base de données initialisée")
     if BackgroundScheduler:
         scheduler = BackgroundScheduler()
-        # Automatisation (exigée par la fiche : "Synchronisation
-        # automatique quotidienne") — relance la collecte complète
-        # tous les jours à 2h du matin, sans intervention manuelle.
         scheduler.add_job(_scheduled_collection, "cron", hour=2, minute=0)
         scheduler.start()
         print("⏰ Rafraîchissement automatique programmé tous les jours à 2h00.")
 
 
 def _scheduled_collection():
-    """Appelé automatiquement par APScheduler chaque nuit."""
     print(f"🌙 [{datetime.now()}] Lancement de la collecte automatique quotidienne...")
     try:
         from collect_data import run_collection
@@ -283,9 +273,7 @@ def export_pdf(
     max_score: Optional[float] = Query(None),
     session: Session = Depends(get_session),
 ):
-    """
-    Export PDF (Phase B6.2 optionnelle)
-    """
+
     try:
         from reportlab.lib.pagesizes import letter, landscape
         from reportlab.pdfgen import canvas
@@ -416,7 +404,6 @@ def acknowledge_all_alerts(session: Session = Depends(get_session)):
 
 @app.post("/api/sync")
 def trigger_manual_sync():
-    """Déclenche une collecte complète immédiatement."""
     try:
         from collect_data import run_collection
         run_collection(trigger="api")

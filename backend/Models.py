@@ -1,16 +1,3 @@
-"""
-models.py
-=========
-Modèles SQLAlchemy — la "couche persistance" décrite dans le schéma
-d'architecture de la fiche de stage (Section 4).
-
-Deux tables :
-- Vulnerability : une ligne par CVE suivie
-- Alert         : une ligne par alerte générée (Phase B5 du Guide —
-                   nouvelle CVE critique ou nouvellement KEV sur un
-                   vendeur suivi)
-"""
-
 from sqlalchemy import Column, String, Float, Boolean, DateTime, Integer, Text, ForeignKey
 from sqlalchemy.orm import declarative_base
 from datetime import datetime
@@ -50,18 +37,8 @@ class Alert(Base):
     created_at = Column(DateTime, default=datetime.utcnow, index=True)
     acknowledged = Column(Boolean, default=False)
 
-    # Anti-doublon (Tâche B5.3) : une même CVE + un même motif ne doit
-    # générer qu'UNE seule alerte. On vérifie ça dans le code (voir
-    # collect_data.py) plutôt qu'avec une contrainte SQL stricte, pour
-    # rester simple avec SQLite.
-
-
 class SyncLog(Base):
-    """Journalisation des synchronisations — exigée explicitement par la
-    fiche de stage (section 'Automatisation' : 'Journalisation des
-    synchronisations'). Une ligne par exécution de collect_data.py,
-    qu'elle soit lancée manuellement, via /api/sync, ou automatiquement
-    la nuit."""
+    
     __tablename__ = "sync_logs"
 
     id = Column(Integer, primary_key=True, autoincrement=True)

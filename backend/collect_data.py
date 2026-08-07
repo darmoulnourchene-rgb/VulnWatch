@@ -1,21 +1,3 @@
-"""
-collect_data.py
-================
-Collecteur réel — NVD + CISA KEV + Fortinet PSIRT + Palo Alto PSIRT.
-
-Différences par rapport à la version précédente :
-- Écrit désormais dans la base SQLite (via SQLAlchemy) au lieu d'un simple
-  fichier JSON — voir models.py / database.py (Phase B1).
-- Garde un export data.json en plus, comme copie de secours utilisée par
-  le frontend si l'API est injoignable (fallback déjà prévu dans api_fast.js).
-- Ajoute un deuxième flux PSIRT (Palo Alto), en plus de Fortinet.
-- Suit la liste de TOUS les produits affectés par CVE (pas un seul).
-- Génère des alertes (Phase B5) quand une CVE est nouvellement vue comme
-  CRITICAL, ou nouvellement marquée KEV, sur un vendeur suivi.
-
-Lancer avec :  python3 collect_data.py
-"""
-
 import json
 import os
 import re
@@ -36,12 +18,9 @@ from Models import Vulnerability, Alert, SyncLog
 
 # ===== CONFIGURATION =====
 
-NVD_API_KEY = ""  # optionnel — voir COLLECT_README.md
+NVD_API_KEY = ""  
 NVD_BASE_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 CISA_KEV_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
-
-# ⚠️ À vérifier vous-même : les URLs de flux RSS PSIRT changent parfois.
-# Cherchez "<vendeur> PSIRT RSS feed" si l'une de ces deux ne répond plus.
 FORTINET_PSIRT_RSS = "https://filestore.fortinet.com/fortiguard/rss/ir.xml"
 PALOALTO_PSIRT_RSS = "https://security.paloaltonetworks.com/rss.xml"
 
@@ -61,7 +40,7 @@ VENDORS = {
     "Bitdefender": "Bitdefender",
 }
 
-DAYS_BACK = 120  # ⚠️ NVD refuse tout écart pubStartDate/pubEndDate > 120 jours
+DAYS_BACK = 120  
 RESULTS_PER_VENDOR = 15
 NVD_DELAY = 6.5 if not NVD_API_KEY else 0.7
 
@@ -71,7 +50,7 @@ JSON_FALLBACK_PATH = os.path.join(BASE_DIR, "..", "frontend", "data", "data.json
 CVE_PATTERN = re.compile(r"CVE-\d{4}-\d{4,7}")
 
 
-# ===== ÉTAPE 1 : COLLECTE NVD (Tâche B2.1) =====
+# ===== COLLECTE NVD  =====
 
 def fetch_nvd_by_keyword(keyword, results_per_page=15, days_back=DAYS_BACK):
     end = datetime.utcnow()
@@ -108,11 +87,7 @@ def fetch_nvd_by_id(cve_id):
 
 
 def extract_cvss(metrics):
-    """Retourne (score, severity, unscored). unscored=True signifie que
-    NVD n'a pas encore attribué de score CVSS à cette CVE (statut
-    'Awaiting Analysis' — très fréquent pour les CVE très récentes).
-    Dans ce cas on ne veut SURTOUT PAS afficher 0.0/LOW, qui laisserait
-    croire à tort que la faille est bénigne."""
+
     for key in ("cvssMetricV31", "cvssMetricV30", "cvssMetricV2"):
         if key in metrics and metrics[key]:
             m = metrics[key][0]
@@ -128,15 +103,12 @@ def extract_cvss(metrics):
 
 
 def extract_products(cve):
-    """Extrait la liste des produits/versions affectés depuis les CPE
-    fournis par NVD (configurations). Retombe sur une liste vide si NVD
-    ne fournit pas de configuration exploitable."""
+
     products = set()
     for config in cve.get("configurations", []):
         for node in config.get("nodes", []):
             for cpe_match in node.get("cpeMatch", []):
                 criteria = cpe_match.get("criteria", "")
-                # cpe:2.3:a:vendor:product:version:...
                 parts = criteria.split(":")
                 if len(parts) > 4:
                     product_name = parts[4].replace("_", " ")
@@ -166,11 +138,11 @@ def normalize_nvd_item(item, vendor_label):
         "products": products if products else [vendor_label],
         "description": description,
         "cvss_score": round(score, 1),
-        "severity": severity,  # peut valoir "UNSCORED" si NVD n'a pas encore noté
+        "severity": severity,  
         "unscored": unscored,
         "published_date": published,
         "patch_available": patch_available,
-        "kev_status": False,  # mis à jour à l'étape 2
+        "kev_status": False,  
         "versions": ", ".join(products) if products else "Voir références",
         "references": references[:5] if references else [f"https://nvd.nist.gov/vuln/detail/{cve_id}"],
         "source": "NVD",
@@ -199,7 +171,7 @@ def collect_from_nvd():
     return all_items
 
 
-# ===== ÉTAPE 2 : CISA KEV (Tâche B2.2) =====
+# =====  CISA KEV  =====
 
 def fetch_kev_ids():
     try:
@@ -221,7 +193,7 @@ def enrich_with_kev(items, kev_ids):
     return items
 
 
-# ===== ÉTAPE 3 : FLUX PSIRT (Tâche B2.3) — Fortinet + Palo Alto =====
+# ===== FLUX PSIRT — Fortinet + Palo Alto =====
 
 def collect_from_psirt_rss(rss_url, vendor_label, source_tag):
     if feedparser is None:
@@ -252,12 +224,10 @@ def collect_from_psirt_rss(rss_url, vendor_label, source_tag):
     return items
 
 
-# ===== ÉTAPE 4 : SAUVEGARDE EN BASE + ALERTES (Phases B3 et B5) =====
+# ===== SAUVEGARDE EN BASE + ALERTES =====
 
 def upsert_and_alert(session, items):
-    """Insère/met à jour chaque vulnérabilité (Tâche B3.2 — sans doublons,
-    grâce à la clé primaire = CVE ID) et génère des alertes (Phase B5)
-    quand une CVE est nouvellement CRITICAL ou nouvellement KEV."""
+
     new_count = 0
     updated_count = 0
     alerts_created = 0
@@ -303,12 +273,8 @@ def upsert_and_alert(session, items):
             session.add(existing)
             new_count += 1
 
-        # ----- Règles d'alerte (Tâche B5.1) -----
-        # 1. Nouvelle CVE CRITICAL sur un vendeur suivi (que ce soit une
-        #    CVE totalement nouvelle, ou une CVE existante qui vient de
-        #    passer à CRITICAL — ex: réévaluation de score par NVD)
+
         is_new_critical = item["severity"] == "CRITICAL" and not was_critical
-        # 2. CVE nouvellement marquée KEV (exploitée activement)
         is_newly_kev = item["kev_status"] and not was_kev
 
         if is_new_critical:
@@ -328,8 +294,7 @@ def upsert_and_alert(session, items):
 
 
 def _create_alert_if_absent(session, item, reason, message):
-    """Anti-doublon (Tâche B5.3) : vérifie qu'une alerte avec le même
-    CVE ID + le même motif n'existe pas déjà avant d'en créer une."""
+
     existing_alert = (
         session.query(Alert)
         .filter(Alert.cve_id == item["id"], Alert.reason == reason)
@@ -343,8 +308,7 @@ def _create_alert_if_absent(session, item, reason, message):
 
 
 def export_json_fallback(session):
-    """Garde un data.json à jour, utilisé par le frontend uniquement si
-    l'API est injoignable (voir le fallback dans api_fast.js)."""
+
     items = session.query(Vulnerability).all()
     payload = {
         "generated_at": datetime.now().isoformat(),
@@ -373,16 +337,10 @@ def export_json_fallback(session):
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
-# ===== ORCHESTRATION GLOBALE (Tâche B3.3) =====
+# ===== ORCHESTRATION GLOBALE =====
 
 def run_collection(trigger="manual"):
-    """Point d'entrée unique — appelé par le script en ligne de commande,
-    par le planificateur automatique (trigger='scheduled'), ou via
-    /api/sync (trigger='api'). (Tâche B3.3 : 'une seule commande permet
-    de peupler la base'.)
-
-    Chaque exécution est journalisée dans la table sync_logs — exigé par
-    la fiche de stage ('Journalisation des synchronisations')."""
+    
     print("=" * 60)
     print("🚀 COLLECTE VULNWATCH — NVD + CISA KEV + PSIRT (Fortinet, Palo Alto)")
     print("=" * 60)

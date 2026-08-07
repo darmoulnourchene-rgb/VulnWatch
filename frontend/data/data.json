@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T12:42:58.659589",
+  "generated_at": "2026-08-05T20:42:23.371911",
   "vulnerabilities": [
     {
       "id": "CVE-2026-0232",
@@ -2159,9 +2159,9 @@
     {
       "id": "CVE-2026-61057",
       "vendor": "ESET",
-      "product": "ESET",
+      "product": "peoplesoft enterprise fin esettlements",
       "products": [
-        "ESET"
+        "peoplesoft enterprise fin esettlements"
       ],
       "description": "Vulnerability in the PeopleSoft Enterprise FIN eSettlements product of Oracle PeopleSoft (component: eSettlements).   The supported version that is affected is 9.2. Difficult to exploit vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise FIN eSettlements.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of PeopleSoft Enterprise FIN eSettlements accessible data as well as  unauthorized read access to a subset of PeopleSoft Enterprise FIN eSettlements accessible data. CVSS 3.1 Base Score 4.8 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N).",
       "cvss_score": 4.8,
@@ -2170,7 +2170,7 @@
       "published_date": "2026-07-21T22:18:36.517",
       "patch_available": false,
       "kev_status": false,
-      "versions": "Voir références",
+      "versions": "peoplesoft enterprise fin esettlements",
       "references": [
         "https://www.oracle.com/security-alerts/cpujul2026.html"
       ],
@@ -2179,9 +2179,9 @@
     {
       "id": "CVE-2026-61240",
       "vendor": "ESET",
-      "product": "ESET",
+      "product": "peoplesoft enterprise fin common objects",
       "products": [
-        "ESET"
+        "peoplesoft enterprise fin common objects"
       ],
       "description": "Vulnerability in the PeopleSoft Enterprise FIN Common Objects Argentina product of Oracle PeopleSoft (component: eSettlements).   The supported version that is affected is 9.1. Easily exploitable vulnerability allows unauthenticated attacker with access to the physical communication segment attached to the hardware where the PeopleSoft Enterprise FIN Common Objects Argentina executes to compromise PeopleSoft Enterprise FIN Common Objects Argentina.  While the vulnerability is in PeopleSoft Enterprise FIN Common Objects Argentina, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all PeopleSoft Enterprise FIN Common Objects Argentina accessible data as well as  unauthorized update, insert or delete access to some of PeopleSoft Enterprise FIN Common Objects Argentina accessible data. CVSS 3.1 Base Score 8.2 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N).",
       "cvss_score": 8.2,
@@ -2190,7 +2190,7 @@
       "published_date": "2026-07-21T22:18:54.907",
       "patch_available": false,
       "kev_status": false,
-      "versions": "Voir références",
+      "versions": "peoplesoft enterprise fin common objects",
       "references": [
         "https://www.oracle.com/security-alerts/cpujul2026.html"
       ],
@@ -2677,6 +2677,594 @@
         "https://cert-portal.siemens.com/productcert/html/ssa-104023.html"
       ],
       "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-0268",
+      "vendor": "Palo Alto Networks",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel",
+        "prisma access agent"
+      ],
+      "description": "A security control bypass vulnerability in Prisma Access Agent for Linux allows a local attacker to route network traffic outside the VPN tunnel.\n\n\n\nThis does not impact Prisma Access Agent on Windows, macOS, iOS, Android, or ChromeOS.",
+      "cvss_score": 4.4,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-06-10T22:16:53.413",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "linux kernel, prisma access agent",
+      "references": [
+        "https://security.paloaltonetworks.com/CVE-2026-0268"
+      ],
+      "source": "NVD + Palo Alto PSIRT"
+    },
+    {
+      "id": "CVE-2026-22828",
+      "vendor": "Fortinet",
+      "product": "fortianalyzer cloud",
+      "products": [
+        "fortianalyzer cloud",
+        "fortimanager cloud"
+      ],
+      "description": "A heap-based buffer overflow vulnerability in Fortinet FortiAnalyzer Cloud 7.6.2 through 7.6.4, FortiManager Cloud 7.6.2 through 7.6.4 may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests. Successful exploitation would require a large amount of effort in preparation because of ASLR and network segmentation",
+      "cvss_score": 8.1,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-14T16:16:37.110",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "fortianalyzer cloud, fortimanager cloud",
+      "references": [
+        "https://fortiguard.fortinet.com/psirt/FG-IR-26-121"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20059",
+      "vendor": "Cisco",
+      "product": "unity connection",
+      "products": [
+        "unity connection"
+      ],
+      "description": "A vulnerability in the web-based management interface of Cisco Unity Connection could allow an unauthenticated, remote attacker to conduct a reflected XSS attack against a user of the interface.\r\n\r\nThis vulnerability exists because the web-based management interface does not properly validate user-supplied input. An attacker could exploit this vulnerability by persuading a user to click a crafted link. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.",
+      "cvss_score": 6.1,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:01.060",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "unity connection",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-unity-vulns-n2EJSbbw"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20060",
+      "vendor": "Cisco",
+      "product": "unity connection",
+      "products": [
+        "unity connection"
+      ],
+      "description": "A vulnerability in the web-based management interface of Cisco Unity Connection could allow an unauthenticated, remote attacker to redirect a user to a malicious web page.\r\n\r\nThis vulnerability is due to improper input validation of HTTP request parameters. An attacker could exploit this vulnerability by persuading a user to click a crafted link. A successful exploit could allow the attacker to redirect a user to a malicious web page.",
+      "cvss_score": 4.7,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:01.250",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "unity connection",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-unity-vulns-n2EJSbbw"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20061",
+      "vendor": "Cisco",
+      "product": "unity connection",
+      "products": [
+        "unity connection"
+      ],
+      "description": "A vulnerability in the web-based management interface of Cisco Unity Connection could allow an authenticated, remote attacker to perform an SQL injection attack against an affected device. To exploit this vulnerability, the attacker must have valid user credentials on the affected device.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by sending a crafted HTTP(S) request to the web-based management interface of an affected device. A successful exploit could allow the attacker to view data on the affected device.",
+      "cvss_score": 4.3,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:01.433",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "unity connection",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-unity-vulns-n2EJSbbw"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20078",
+      "vendor": "Cisco",
+      "product": "unity connection",
+      "products": [
+        "unity connection"
+      ],
+      "description": "Multiple vulnerabilities in Cisco Unity Connection could allow an authenticated, remote attacker&nbsp;to download arbitrary files from an affected system. To exploit these vulnerabilities, the attacker must have valid administrative credentials.&nbsp;\r\n\r\nThese vulnerabilities are due to improper sanitization of user input to the web-based management interface. An attacker could exploit these vulnerabilities by sending a crafted HTTPS request. A successful exploit could allow the attacker to download arbitrary files from an affected system.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:01.610",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "unity connection",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-unity-file-download-RmKEVWPx"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20081",
+      "vendor": "Cisco",
+      "product": "unity connection",
+      "products": [
+        "unity connection"
+      ],
+      "description": "Multiple vulnerabilities in Cisco Unity Connection could allow an authenticated, remote attacker&nbsp;to download arbitrary files from an affected system. To exploit these vulnerabilities, the attacker must have valid administrative credentials.&nbsp;\r\n\r\nThese vulnerabilities are due to improper sanitization of user input to the web-based management interface. An attacker could exploit these vulnerabilities by sending a crafted HTTPS request. A successful exploit could allow the attacker to download arbitrary files from an affected system.",
+      "cvss_score": 6.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:01.783",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "unity connection",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-unity-file-download-RmKEVWPx"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20132",
+      "vendor": "Cisco",
+      "product": "identity services engine",
+      "products": [
+        "identity services engine"
+      ],
+      "description": "Multiple vulnerabilities in the web-based management interface of Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker with administrative&nbsp;write privileges to conduct a stored cross-site scripting (XSS) attack or a reflected XSS attack against a user of the web-based management interface of an affected device.\r\n\r\nThese vulnerabilities are due to insufficient sanitization of user-supplied data that is stored in the web page. An attacker could exploit these vulnerabilities by convincing a user of the interface to click a specific link or view an affected web page. The injected script code may be executed in the context of the web-based management interface or allow the attacker to access sensitive browser-based information.",
+      "cvss_score": 4.8,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:01.967",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "identity services engine",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-isexss-BS8ctE7U"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20136",
+      "vendor": "Cisco",
+      "product": "identity services engine",
+      "products": [
+        "identity services engine",
+        "identity services engine passive identity connector"
+      ],
+      "description": "A vulnerability in the&nbsp;CLI of Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) could allow an authenticated, local attacker with administrative privileges to perform a command injection attack on the underlying operating system and elevate privileges to root.\r\n\r\nThis vulnerability is due to insufficient validation of user supplied input. An attacker could exploit this vulnerability by providing crafted input to a specific CLI command. A successful exploit could allow the attacker to elevate their privileges to root on the underlying operating system.",
+      "cvss_score": 6.0,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:02.150",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "identity services engine, identity services engine passive identity connector",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-cmd-inj-5WSJcYJB"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20147",
+      "vendor": "Cisco",
+      "product": "identity services engine",
+      "products": [
+        "identity services engine",
+        "identity services engine passive identity connector"
+      ],
+      "description": "A vulnerability in Cisco ISE and Cisco ISE-PIC could allow an authenticated, remote attacker to execute arbitrary commands on the underlying operating system of an affected device. To exploit this vulnerability, the attacker must have valid administrative credentials.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to obtain user-level access to the underlying operating system and then elevate privileges to root. In single-node ISE deployments, successful exploitation of this vulnerability could cause the affected ISE node to become unavailable, resulting in a denial of service (DoS) condition. In that condition, endpoints that have not already authenticated would be unable to access the network until the node is restored.",
+      "cvss_score": 9.9,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:02.410",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "identity services engine, identity services engine passive identity connector",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-rce-traversal-8bYndVrZ"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20148",
+      "vendor": "Cisco",
+      "product": "identity services engine",
+      "products": [
+        "identity services engine",
+        "identity services engine passive identity connector"
+      ],
+      "description": "A vulnerability in Cisco ISE and Cisco ISE-PIC could allow an authenticated, remote attacker to perform path traversal attacks on the underlying operating system and read arbitrary files. To exploit this vulnerability, the attacker must have valid administrative credentials.\r\n\r\nThis vulnerability is due to improper validation of user-supplied input. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected system. A successful exploit could allow the attacker to access sensitive files on the affected system.",
+      "cvss_score": 4.9,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:02.637",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "identity services engine, identity services engine passive identity connector",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-rce-traversal-8bYndVrZ"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20152",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in the authentication service feature of Cisco AsyncOS Software for Cisco Secure Web Appliance could allow an unauthenticated, remote attacker to bypass authentication policy requirements.\r\n\r\nThis vulnerability is due to improper validation of user-supplied authentication input in HTTP requests. An attacker could exploit this vulnerability by sending HTTP requests that contain specific authentication requests to an affected device. A successful exploit could allow the attacker to bypass policy enforcement on the device. There is no direct impact to the Cisco Secure Web Appliance. However, as a result of exploiting this vulnerability, an attacker could send HTTP requests that should be restricted through the device.",
+      "cvss_score": 5.3,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:02.870",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-wsa-auth-bypass-6YZkTQhd"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20161",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in the CLI of Cisco ThousandEyes Enterprise Agent could allow an authenticated, local attacker with low privileges to overwrite arbitrary files on the local system of an affected device.\r\n\r\nThis vulnerability is due to improper access controls on files that are on the local file system&nbsp;of an affected device. An attacker could exploit this vulnerability by placing a symbolic link in a specific location on the local file system. A successful exploit could allow the attacker to bypass file system permissions and overwrite arbitrary files on the affected device.",
+      "cvss_score": 5.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:03.120",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-te-agentfilewrite-tqUw3SMU"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20170",
+      "vendor": "Cisco",
+      "product": "webex contact center",
+      "products": [
+        "webex contact center"
+      ],
+      "description": "A vulnerability in the Desktop Agent functionality of Cisco Webex Contact Center could have allowed an unauthenticated, remote attacker to conduct cross-site scripting attacks. Cisco has addressed this vulnerability in the Cisco Webex Contact Center service, and no customer action is needed.\r\n\r This vulnerability existed because HTML and script content was not properly handled. Prior to this vulnerability being addressed, an attacker could have exploited this vulnerability by persuading a user to follow a malicious link. A successful exploit could have allowed the attacker to steal sensitive information from the browser, including authentication and session information.",
+      "cvss_score": 6.1,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:03.297",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "webex contact center",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-webexcc-xss-WEX5nUnA"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20180",
+      "vendor": "Cisco",
+      "product": "identity services engine",
+      "products": [
+        "identity services engine"
+      ],
+      "description": "A vulnerability in Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to execute arbitrary commands on the underlying operating system of an affected device. To exploit this vulnerability, the attacker must have at least Read Only Admin credentials.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to obtain user-level access to the underlying operating system and then elevate privileges to&nbsp;root. In single-node ISE deployments, successful exploitation of these vulnerabilities could cause the affected ISE node to become unavailable, resulting in a denial of service (DoS) condition. In that condition, endpoints that have not already authenticated would be unable to access the network until the node is restored.",
+      "cvss_score": 9.9,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:03.460",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "identity services engine",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-rce-4fverepv"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20184",
+      "vendor": "Cisco",
+      "product": "Cisco",
+      "products": [
+        "Cisco"
+      ],
+      "description": "A vulnerability in the integration of single sign-on (SSO) with Control Hub in Cisco Webex Services could have allowed an unauthenticated, remote attacker to impersonate any user within the service.\r\n\r\nThis vulnerability existed because of improper certificate validation. Prior to this vulnerability being addressed, an attacker could have exploited this vulnerability by connecting to a service endpoint and supplying a crafted token. A successful exploit could have allowed the attacker to gain unauthorized access to legitimate Cisco Webex services.",
+      "cvss_score": 9.8,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:03.677",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-webex-cui-cert-8jSZYhWL"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-20186",
+      "vendor": "Cisco",
+      "product": "identity services engine",
+      "products": [
+        "identity services engine"
+      ],
+      "description": "A vulnerability in Cisco Identity Services Engine (ISE) could allow an authenticated, remote attacker to execute arbitrary commands on the underlying operating system of an affected device. To exploit this vulnerability, the attacker must have at least Read Only Admin credentials.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to obtain user-level access to the underlying operating system and then elevate privileges to&nbsp;root. In single-node ISE deployments, successful exploitation of these vulnerabilities could cause the affected ISE node to become unavailable, resulting in a denial of service (DoS) condition. In that condition, endpoints that have not already authenticated would be unable to access the network until the node is restored.",
+      "cvss_score": 9.9,
+      "severity": "CRITICAL",
+      "unscored": false,
+      "published_date": "2026-04-15T17:17:03.933",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "identity services engine",
+      "references": [
+        "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-rce-4fverepv"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-31422",
+      "vendor": "Check Point",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: cls_flow: fix NULL pointer dereference on shared blocks\n\nflow_change() calls tcf_block_q() and dereferences q->handle to derive\na default baseclass.  Shared blocks leave block->q NULL, causing a NULL\nderef when a flow filter without a fully qualified baseclass is created\non a shared block.\n\nCheck tcf_block_shared() before accessing block->q and return -EINVAL\nfor shared blocks.  This avoids the null-deref shown below:\n\n=======================================================================\nKASAN: null-ptr-deref in range [0x0000000000000038-0x000000000000003f]\nRIP: 0010:flow_change (net/sched/cls_flow.c:508)\nCall Trace:\n tc_new_tfilter (net/sched/cls_api.c:2432)\n rtnetlink_rcv_msg (net/core/rtnetlink.c:6980)\n [...]\n=======================================================================",
+      "cvss_score": 5.5,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-13T14:16:11.907",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/1a280dd4bd1d616a01d6ffe0de284c907b555504",
+        "https://git.kernel.org/stable/c/415ea0c973c754b9f375225807810eb9045f4293",
+        "https://git.kernel.org/stable/c/4a09f72007201c9f667dc47f64517ec23eea65e5",
+        "https://git.kernel.org/stable/c/57f94ac7e953eece5ed4819605a18f3cdfc63dcc",
+        "https://git.kernel.org/stable/c/942813276edeb1741fa5b0a73471beb4e495fa08"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-31426",
+      "vendor": "Check Point",
+      "product": "linux kernel",
+      "products": [
+        "linux kernel"
+      ],
+      "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nACPI: EC: clean up handlers on probe failure in acpi_ec_setup()\n\nWhen ec_install_handlers() returns -EPROBE_DEFER on reduced-hardware\nplatforms, it has already started the EC and installed the address\nspace handler with the struct acpi_ec pointer as handler context.\nHowever, acpi_ec_setup() propagates the error without any cleanup.\n\nThe caller acpi_ec_add() then frees the struct acpi_ec for non-boot\ninstances, leaving a dangling handler context in ACPICA.\n\nAny subsequent AML evaluation that accesses an EC OpRegion field\ndispatches into acpi_ec_space_handler() with the freed pointer,\ncausing a use-after-free:\n\n BUG: KASAN: slab-use-after-free in mutex_lock (kernel/locking/mutex.c:289)\n Write of size 8 at addr ffff88800721de38 by task init/1\n Call Trace:\n  <TASK>\n  mutex_lock (kernel/locking/mutex.c:289)\n  acpi_ec_space_handler (drivers/acpi/ec.c:1362)\n  acpi_ev_address_space_dispatch (drivers/acpi/acpica/evregion.c:293)\n  acpi_ex_access_region (drivers/acpi/acpica/exfldio.c:246)\n  acpi_ex_field_datum_io (drivers/acpi/acpica/exfldio.c:509)\n  acpi_ex_extract_from_field (drivers/acpi/acpica/exfldio.c:700)\n  acpi_ex_read_data_from_field (drivers/acpi/acpica/exfield.c:327)\n  acpi_ex_resolve_node_to_value (drivers/acpi/acpica/exresolv.c:392)\n  </TASK>\n\n Allocated by task 1:\n  acpi_ec_alloc (drivers/acpi/ec.c:1424)\n  acpi_ec_add (drivers/acpi/ec.c:1692)\n\n Freed by task 1:\n  kfree (mm/slub.c:6876)\n  acpi_ec_add (drivers/acpi/ec.c:1751)\n\nThe bug triggers on reduced-hardware EC platforms (ec->gpe < 0)\nwhen the GPIO IRQ provider defers probing. Once the stale handler\nexists, any unprivileged sysfs read that causes AML to touch an\nEC OpRegion (battery, thermal, backlight) exercises the dangling\npointer.\n\nFix this by calling ec_remove_handlers() in the error path of\nacpi_ec_setup() before clearing first_ec. ec_remove_handlers()\nchecks each EC_FLAGS_* bit before acting, so it is safe to call\nregardless of how far ec_install_handlers() progressed:\n\n  -ENODEV  (handler not installed): only calls acpi_ec_stop()\n  -EPROBE_DEFER (handler installed): removes handler, stops EC",
+      "cvss_score": 7.0,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-13T14:16:12.600",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "linux kernel",
+      "references": [
+        "https://git.kernel.org/stable/c/022d1727f33ff90b3e1775125264e3023901952e",
+        "https://git.kernel.org/stable/c/808c0f156f48d5b8ca34088cbbfba8444e606cbc",
+        "https://git.kernel.org/stable/c/9c886e63b69658959633937e3acb7ca8addf7499",
+        "https://git.kernel.org/stable/c/be1a827e15991e874e0d5222d0ea5fdad01960fe",
+        "https://git.kernel.org/stable/c/d04c007047c88158141d9bd5eac761cdadd3782c"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-39956",
+      "vendor": "Check Point",
+      "product": "jq",
+      "products": [
+        "jq"
+      ],
+      "description": "jq is a command-line JSON processor. In commits after 69785bf77f86e2ea1b4a20ca86775916889e91c9, the _strindices builtin in jq's src/builtin.c passes its arguments directly to jv_string_indexes() without verifying they are strings, and jv_string_indexes() in src/jv.c relies solely on assert() checks that are stripped in release builds compiled with -DNDEBUG. This allows an attacker to crash jq trivially with input like _strindices(0), and by crafting a numeric value whose IEEE-754 bit pattern maps to a chosen pointer, achieve a controlled pointer dereference and limited memory read/probe primitive. Any deployment that evaluates untrusted jq filters against a release build is vulnerable. This issue has been patched in commit fdf8ef0f0810e3d365cdd5160de43db46f57ed03.",
+      "cvss_score": 6.1,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-13T23:16:27.653",
+      "patch_available": true,
+      "kev_status": false,
+      "versions": "jq",
+      "references": [
+        "https://github.com/jqlang/jq/commit/fdf8ef0f0810e3d365cdd5160de43db46f57ed03",
+        "https://github.com/jqlang/jq/security/advisories/GHSA-6gc3-3g9p-xx28",
+        "https://github.com/jqlang/jq/security/advisories/GHSA-6gc3-3g9p-xx28"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-33019",
+      "vendor": "Check Point",
+      "product": "libsixel",
+      "products": [
+        "libsixel"
+      ],
+      "description": "libsixel is a SIXEL encoder/decoder implementation derived from kmiya's sixel. Versions 1.8.7 and prior contain an integer overflow leading to an out-of-bounds heap read in the --crop option handling of img2sixel, where positive coordinates up to INT_MAX are accepted without overflow-safe bounds checking. In sixel_encoder_do_clip(), the expression clip_w + clip_x overflows to a large negative value when clip_x is INT_MAX, causing the bounds guard to be skipped entirely, and the unclamped coordinate is passed through sixel_frame_clip() to clip(), which computes a source pointer far beyond the image buffer and passes it to memmove(). An attacker supplying a specially crafted crop argument with any valid image can trigger an out-of-bounds read in the heap, resulting in a reliable crash and potential information disclosure. This issue has been fixed in version 1.8.7-r1.",
+      "cvss_score": 7.1,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-14T22:16:30.380",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "libsixel",
+      "references": [
+        "https://github.com/saitoha/libsixel/releases/tag/v1.8.7-r1",
+        "https://github.com/saitoha/libsixel/security/advisories/GHSA-c854-ffg9-g72c",
+        "https://github.com/saitoha/libsixel/security/advisories/GHSA-c854-ffg9-g72c"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-3643",
+      "vendor": "Check Point",
+      "product": "Check Point",
+      "products": [
+        "Check Point"
+      ],
+      "description": "The Accessibly plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the REST API in all versions up to, and including, 3.0.3. The plugin registers REST API endpoints at `/otm-ac/v1/update-widget-options` and `/otm-ac/v1/update-app-config` with the `permission_callback` set to `__return_true`, which means no authentication or authorization check is performed. The `updateWidgetOptions()` function in `AdminApi.php` accepts user-supplied JSON data and passes it directly to `AccessiblyOptions::updateAppConfig()`, which saves it to the WordPress options table via `update_option()` without any sanitization or validation. The stored `widgetSrc` value is later retrieved by `AssetsManager::enqueueFrontendScripts()` and passed directly to `wp_enqueue_script()` as the script URL, causing it to be rendered as a `<script>` tag on every front-end page. This makes it possible for unauthenticated attackers to inject arbitrary JavaScript that executes for all site visitors by changing the `widgetSrc` option to point to a malicious external script.",
+      "cvss_score": 7.2,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-15T09:16:31.720",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/otm-accessibly/tags/3.0.3/public/Api/BaseApiController.php#L22",
+        "https://plugins.trac.wordpress.org/browser/otm-accessibly/tags/3.0.3/public/AssetsManager.php#L63",
+        "https://plugins.trac.wordpress.org/browser/otm-accessibly/tags/3.0.3/public/Data/AccessiblyOptions.php#L69",
+        "https://plugins.trac.wordpress.org/browser/otm-accessibly/tags/3.0.3/public/admin/AdminApi.php#L65",
+        "https://plugins.trac.wordpress.org/browser/otm-accessibly/trunk/public/Api/BaseApiController.php#L22"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-3614",
+      "vendor": "Check Point",
+      "product": "Check Point",
+      "products": [
+        "Check Point"
+      ],
+      "description": "The AcyMailing plugin for WordPress is vulnerable to privilege escalation in all versions From 9.11.0 up to, and including, 10.8.1 due to a missing capability check on the `wp_ajax_acymailing_router` AJAX handler. This makes it possible for authenticated attackers, with Subscriber-level access and above, to access admin-only controllers (including configuration management), enable the autologin feature, create a malicious newsletter subscriber with an injected `cms_id` pointing to any WordPress user, and then use the autologin URL to authenticate as that user, including administrators.",
+      "cvss_score": 8.8,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-16T06:16:18.167",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "Voir références",
+      "references": [
+        "https://plugins.trac.wordpress.org/browser/acymailing/tags/10.7.1/WpInit/Router.php#L11",
+        "https://plugins.trac.wordpress.org/browser/acymailing/tags/10.7.1/WpInit/Router.php#L122",
+        "https://plugins.trac.wordpress.org/browser/acymailing/tags/10.7.1/WpInit/Router.php#L230",
+        "https://plugins.trac.wordpress.org/browser/acymailing/tags/10.7.1/back/Core/AcymController.php#L92",
+        "https://plugins.trac.wordpress.org/browser/acymailing/tags/10.8.1/back/Core/AcymController.php#L99"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-40613",
+      "vendor": "Check Point",
+      "product": "coturn",
+      "products": [
+        "coturn"
+      ],
+      "description": "Coturn is a free open source implementation of TURN and STUN Server. Prior to 4.10.0, the STUN/TURN attribute parsing functions in coturn perform unsafe pointer casts from uint8_t * to uint16_t * without alignment checks. When processing a crafted STUN message with odd-aligned attribute boundaries, this results in misaligned memory reads at ns_turn_msg.c. On ARM64 architectures (AArch64) with strict alignment enforcement, this causes a SIGBUS signal that immediately kills the turnserver process. An unauthenticated remote attacker can crash any ARM64 coturn deployment by sending a single crafted UDP packet. This vulnerability is fixed in 4.10.0.",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-21T19:16:17.743",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "coturn",
+      "references": [
+        "https://github.com/coturn/coturn/security/advisories/GHSA-j662-9wcj-mf36",
+        "https://github.com/coturn/coturn/security/advisories/GHSA-j662-9wcj-mf36"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-40881",
+      "vendor": "Check Point",
+      "product": "zebra-network",
+      "products": [
+        "zebra-network",
+        "zebrad"
+      ],
+      "description": "ZEBRA is a Zcash node written entirely in Rust. Prior to zebrad version 4.3.0 and zebra-network version 5.0.1, when deserializing addr or addrv2 messages, which contain vectors of addresses, Zebra would fully deserialize them up to a maximum length (over 233,000) that was derived from the 2 MiB message size limit. This is much larger than the actual limit of 1,000 messages from the specification. Zebra would eventually check that limit but, at that point, the memory for the larger vector was already allocated. An attacker could cause out-of-memory aborts in Zebra by sending multiple such messages over different connections. This vulnerability is fixed in zebrad version 4.3.0 and zebra-network version 5.0.1.",
+      "cvss_score": 7.5,
+      "severity": "HIGH",
+      "unscored": false,
+      "published_date": "2026-04-21T20:17:01.850",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "zebra-network, zebrad",
+      "references": [
+        "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-xr93-pcq3-pxf8",
+        "https://github.com/ZcashFoundation/zebra/security/advisories/GHSA-xr93-pcq3-pxf8"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-33262",
+      "vendor": "Check Point",
+      "product": "recursor",
+      "products": [
+        "recursor"
+      ],
+      "description": "An attacker can send replies that result in a null pointer dereference, caused by a missing consistency check and leading to a denial of service. Cookies are disabled by default.",
+      "cvss_score": 5.9,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-22T10:16:51.997",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "recursor",
+      "references": [
+        "https://docs.powerdns.com/recursor/security-advisories/powerdns-advisory-powerdns-2026-03.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-33600",
+      "vendor": "Check Point",
+      "product": "recursor",
+      "products": [
+        "recursor"
+      ],
+      "description": "An RPZ sent by a malicious authoritative server can result in a null pointer dereference, caused by a missing consistency check and leading to a denial of service.",
+      "cvss_score": 4.4,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-22T10:16:52.107",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "recursor",
+      "references": [
+        "https://docs.powerdns.com/recursor/security-advisories/powerdns-advisory-powerdns-2026-03.html"
+      ],
+      "source": "NVD"
+    },
+    {
+      "id": "CVE-2026-33601",
+      "vendor": "Check Point",
+      "product": "recursor",
+      "products": [
+        "recursor"
+      ],
+      "description": "If you use the zoneToCache function with a malicious authoritative server, an attacker can send a zone that result in a null pointer dereference, caused by a missing consistency check and leading to a denial of service.",
+      "cvss_score": 4.4,
+      "severity": "MEDIUM",
+      "unscored": false,
+      "published_date": "2026-04-22T10:16:52.223",
+      "patch_available": false,
+      "kev_status": false,
+      "versions": "recursor",
+      "references": [
+        "https://docs.powerdns.com/recursor/security-advisories/powerdns-advisory-powerdns-2026-03.html"
+      ],
+      "source": "NVD"
     }
   ]
 }

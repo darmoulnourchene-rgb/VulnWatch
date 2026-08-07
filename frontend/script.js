@@ -1,6 +1,3 @@
-// ==========================================================
-// VULNWATCH - FRONTEND (COMPLET)
-// ==========================================================
 
 const SEVERITY = {
     critical: { color: "#D8323F", label: "CRITIQUE" },
@@ -153,9 +150,6 @@ function updateAlertBadge(count) {
     }
 }
 
-// ===== PANNEAU D'ALERTES PERSISTANTES (backend, Phase B5) =====
-// Complète les toasts de session ci-dessus avec un historique qui
-// survit au rechargement de page, via /api/alerts.
 
 async function loadAlertsPanel() {
     const data = await fetchAlerts();
@@ -560,7 +554,6 @@ function renderFilters() {
         };
     }
     
-    // ✅ FILTRES SCORE - EN TEMPS RÉEL
     const minScoreInput = document.getElementById("minScore");
     const maxScoreInput = document.getElementById("maxScore");
     if (minScoreInput) {
@@ -588,7 +581,6 @@ function renderList() {
         if (state.product !== "all" && v.product !== state.product) return false;
         if (state.kevOnly && !v.kev) return false;
         
-        // ✅ FILTRE SCORE CORRIGÉ
         const score = v.score || 0;
         if (state.min_score && score < parseFloat(state.min_score)) return false;
         if (state.max_score && score > parseFloat(state.max_score)) return false;
@@ -889,7 +881,6 @@ document.addEventListener("DOMContentLoaded", function() {
         exportBtn.addEventListener("click", exportCSV);
     }
     
-    // ✅ BOUTON PDF
     const pdfBtn = document.getElementById("exportPDFBtn");
     if (pdfBtn) {
         pdfBtn.addEventListener("click", exportPDF);
@@ -900,7 +891,6 @@ document.addEventListener("DOMContentLoaded", function() {
         refreshBtn.addEventListener("click", refreshData);
     }
     
-    // Cloche d'alertes persistantes
     const alertBell = document.getElementById("alertBell");
     const alertsPanel = document.getElementById("alertsPanel");
     if (alertBell && alertsPanel) {

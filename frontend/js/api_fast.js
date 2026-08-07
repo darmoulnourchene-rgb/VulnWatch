@@ -1,4 +1,4 @@
-// frontend/js/api_fast.js - VERSION COMPLÈTE
+
 const API_BASE = "http://127.0.0.1:8000";
 
 // ===== CONVERSION =====
